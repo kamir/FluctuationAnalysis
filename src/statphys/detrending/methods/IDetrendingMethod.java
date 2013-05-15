@@ -47,6 +47,7 @@ public interface IDetrendingMethod {
     
 //    public void initIntervalS_version3();
     public void initIntervalS_version4();
+    public void initIntervalS_version5();
 
     /**
      * das Array mit den Daten wird nun übergeben ...
@@ -122,5 +123,7 @@ public interface IDetrendingMethod {
      */
     public int[] getS();
     public void showS();
+
+    public void setLogBinning(boolean b);
 
 }

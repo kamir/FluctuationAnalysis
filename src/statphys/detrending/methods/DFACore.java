@@ -59,6 +59,33 @@ abstract public class DFACore implements IDetrendingMethod {
         }
         initF();
     }
+    
+    public void initIntervalSFactor() {
+
+     //   int s_max = para.getN() / 4;
+        int s_max = para.getN() ;
+
+        int s_min = Math.abs( para.getGradeOfPolynom()) + 2;
+
+        int rangeS = s_max-s_min;
+
+        s = new int[para.getzSValues()];
+
+        s[0] = s_min;
+        s[para.getzSValues()-1] = s_max;
+
+        int step = rangeS / para.getzSValues();
+
+        for ( int i = 1; i < (para.getzSValues()-1); i++ ) {
+            s[i] = s_min + step * i;
+        }
+        System.out.println("\n  s (" + s_min + ", " + s_max +") ");
+        System.out.println("======");
+        for ( int i = 0; i < s.length; i++ ) {
+            System.out.println( i + " \t " + s[i] );
+        }
+        initF();
+    }
 
     Vector<Messreihe> fitMR = new Vector<Messreihe>();
 
@@ -90,6 +117,9 @@ abstract public class DFACore implements IDetrendingMethod {
             double y =  F[3][i];
             if ( x != 0.0 && y != 0.0 ) mr.addValuePair( Math.log10(x) , Math.log10( y ));
         }
+        
+        if( useLogBinning ) return logBinned( mr );
+        
         return mr;
     };
 
@@ -463,7 +493,10 @@ abstract public class DFACore implements IDetrendingMethod {
     }
 
 
-
+    boolean useLogBinning = false;
+    public void setLogBinning(boolean b) {
+        useLogBinning = b;
+    }
 
 
 
@@ -520,4 +553,8 @@ abstract public class DFACore implements IDetrendingMethod {
 ////        }
 //        initF();
 //    }
+
+    private Messreihe logBinned(Messreihe mr) {
+        return mr;
+    }
 }

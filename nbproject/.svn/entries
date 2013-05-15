@@ -11,8 +11,8 @@ svn://192.168.0.115
 409
 root
 has-props
-
-
+has-prop-mods
+svn:special svn:externals svn:needs-lock
 
 
 

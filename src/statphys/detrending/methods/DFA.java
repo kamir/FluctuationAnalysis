@@ -122,8 +122,17 @@ public class DFA extends DFACore {
         }
         initF();
     }
+    
+    public void initIntervalS_version5() {
+         throw new UnsupportedOperationException("Not supported yet.");
+
+    }    
 
     public void initIntervalS_FULL() {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
+
+    public void setLogBinning(boolean b) {
         throw new UnsupportedOperationException("Not supported yet.");
     }
 }

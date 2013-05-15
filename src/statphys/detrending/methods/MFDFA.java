@@ -1,11 +1,13 @@
 package statphys.detrending.methods;
 
 import data.series.Messreihe;
+import java.util.Vector;
 
 public class MFDFA extends DFACore {
 
     @Override
     public void calc() {
+        
         double t1 = System.currentTimeMillis();
         initF();
         status.append("[");
@@ -66,7 +68,7 @@ public class MFDFA extends DFACore {
 //                  calc y value of fit function depending on poly. degree
                     double fit_y = fx(x-pr_pos, fit);
                     if (currentS == 8) {
-                        mrFitN.addValuePair( x, fit_y);
+                        mrFitN.addValuePair( x, fit_y );
                     }
                     //System.out.print(x+", ");
                     double x_s = (pr[x] - fit_y);  //x~ = pr_value - fit_val
@@ -108,7 +110,38 @@ public class MFDFA extends DFACore {
         status.append("\n> Dauer: " + ((t2 - t1) / 1000) + " s. ");
     }
 
+    // kann erst berechnet werden, wenn das Parameter-Objekt vorliegt
+    public void initIntervalS_version5() {
 
+        int s_start = Math.abs( para.getGradeOfPolynom() ) + 2 ;
+        int s_end = para.getN();
+
+        Vector<Integer> sv = new Vector<Integer>();
+        
+        double S = 1.0 * s_start;
+        sv.add( s_start );
+        
+        while ( S < s_end ) {
+            S = S * 1.1;
+            int S2 = (int)S;
+            if ( !sv.contains(S2) ) {
+                sv.add( S2 );
+//                System.out.println( S2 );
+            }
+        }
+        
+        para.setzSValues( sv.size() );
+        s = new int[sv.size()];
+
+        int i = 0;
+        // linearen Teil belegen
+        for (double svv : sv ) {
+            s[i] = (int)svv;
+            if ( debug ) System.out.println(s[i]);
+            i++;
+        }
+        initF();
+    }
 
     // kann erst berechnet werden, wenn das Parameter-Objekt vorliegt
     public void initIntervalS_version4() {
@@ -129,5 +162,10 @@ public class MFDFA extends DFACore {
 
     public void initIntervalS_FULL() {
         throw new UnsupportedOperationException("Not supported yet.");
+    }
+
+    
+    public void setLogBinning(boolean b) {
+        super.setLogBinning(b);
     }
 }

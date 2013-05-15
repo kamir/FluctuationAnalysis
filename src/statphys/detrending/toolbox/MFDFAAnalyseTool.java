@@ -5,7 +5,9 @@ import data.series.Messreihe;
 import data.series.MessreiheFFT;
 import data.series.MesswertTabelle;
 import java.awt.Color;
+import java.io.BufferedWriter;
 import java.io.File;
+import java.io.FileWriter;
 import java.text.DecimalFormat;
 import java.util.Vector;
 import org.apache.commons.math.stat.regression.SimpleRegression;
@@ -85,6 +87,12 @@ public class MFDFAAnalyseTool {
         Vector<Messreihe> FSQS7 = new Vector<Messreihe>();
         Vector<Messreihe> FSQS8 = new Vector<Messreihe>();
        
+            double fmin1 = 1.0;
+            double fmax1 = 3.5;
+            
+            double fmin2 = 1.0;
+            double fmax2 = 3.5;
+            
         for (int lang : langs) {
             
             // Stufe 1 
@@ -129,38 +137,48 @@ public class MFDFAAnalyseTool {
             rowsB1.add(r1);
             rowsB3.add(r3);
             
-            double fmin1 = 1.7;
-            double fmax1 = 2.7;
+            /**
+             * CUT ROWS according to the life cycle stages ...
+             */            
             
-            double fmin2 = 2.0;
-            double fmax2 = 3.0;
+         
             
-            FSQS1.add( processRow( rBMM2 , lang+"-nN" , fmin1, fmax1) );
-            FSQS2.add( processRow( rBMM4 , lang+"-lN" , fmin1, fmax1) );
-            FSQS3.add( processRow( r2 , lang+"-eN" , fmin1, fmax1) );
-            FSQS4.add( processRow( r4 , lang+"-tV" , fmin1, fmax1) );
+            FSQS1.add( processRow( rBMM2 , lang+"-nN_0" , fmin1, fmax1) );
+            FSQS2.add( processRow( rBMM4 , lang+"-lN_0" , fmin1, fmax1) );
+            FSQS3.add( processRow( r2 , lang+"-eN_0" , fmin1, fmax1) );
+            FSQS4.add( processRow( r4 , lang+"-tV_0" , fmin1, fmax1) );
 
-            FSQS5.add( processRow( rBMM1 , lang+"-NN" , fmin2, fmax2) );
-            FSQS6.add( processRow( rBMM3 , lang+"-LN" , fmin2, fmax2) );
-            FSQS7.add( processRow( r1 , lang+"-EN" , fmin2, fmax2) );
-            FSQS8.add( processRow( r3 , lang+"-TV" , fmin2, fmax2) );
+            FSQS5.add( processRow( rBMM1 , lang+"-NN_1" , fmin2, fmax2) );
+            FSQS6.add( processRow( rBMM3 , lang+"-LN_1" , fmin2, fmax2) );
+            FSQS7.add( processRow( r1 , lang+"-EN_1" , fmin2, fmax2) );
+            FSQS8.add( processRow( r3 , lang+"-TV_1" , fmin2, fmax2) );
 
             
         }
         
-        MultiChart.open( FSQS1, "FSQS nN", "log(s)", "log(F(s))", true );
-        MultiChart.open( FSQS2, "FSQS lN", "log(s)", "log(F(s))", true );
-        MultiChart.open( FSQS3, "FSQS eN", "log(s)", "log(F(s))", true );
-        MultiChart.open( FSQS4, "FSQS tV", "log(s)", "log(F(s))", true );
-        MultiChart.open( FSQS5, "FSQS NN", "log(s)", "log(F(s))", true );
-        MultiChart.open( FSQS6, "FSQS LN", "log(s)", "log(F(s))", true );
-        MultiChart.open( FSQS7, "FSQS EN", "log(s)", "log(F(s))", true );
-        MultiChart.open( FSQS8, "FSQS TV", "log(s)", "log(F(s))", true );
-            
+        MultiChart.open( FSQS1, "1 alpha( s,q ) (" + fmin1 +", " +fmax1+")" , "q", "alpha", true );
+        MultiChart.open( FSQS2, "2 alpha( s,q ) (" + fmin1 +", " +fmax1+")" , "q", "alpha", true );
+        MultiChart.open( FSQS3, "3 alpha( s,q ) (" + fmin1 +", " +fmax1+")" , "q", "alpha", true );
+        MultiChart.open( FSQS4, "4 alpha( s,q ) (" + fmin1 +", " +fmax1+")" , "q", "alpha", true );
+        MultiChart.open( FSQS5, "5 alpha( s,q ) (" + fmin2 +", " +fmax2+")" , "q", "alpha", true );
+        MultiChart.open( FSQS6, "6 alpha( s,q ) (" + fmin2 +", " +fmax2+")" , "q", "alpha", true );
+        MultiChart.open( FSQS7, "7 alpha( s,q ) (" + fmin2 +", " +fmax2+")" , "q", "alpha", true );
+        MultiChart.open( FSQS8, "8 alpha( s,q ) (" + fmin2 +", " +fmax2+")" , "q", "alpha", true );
+
+        String folder = "./RUN2/";
+        String c1 = "no comment";
+
+        
+        MultiChart.openAndStore( FSQS1, "1 alpha( s,q ) (" + fmin1 +", " +fmax1+")" , "q", "alpha", true, folder, "FSQ1", c1  );
+        MultiChart.openAndStore( FSQS2, "2 alpha( s,q ) (" + fmin1 +", " +fmax1+")" , "q", "alpha", true, folder, "FSQ2", c1  );
+        MultiChart.openAndStore( FSQS3, "3 alpha( s,q ) (" + fmin1 +", " +fmax1+")" , "q", "alpha", true, folder, "FSQ3", c1   );
+        MultiChart.openAndStore( FSQS4, "4 alpha( s,q ) (" + fmin1 +", " +fmax1+")" , "q", "alpha", true, folder, "FSQ4", c1   );
+        MultiChart.openAndStore( FSQS5, "5 alpha( s,q ) (" + fmin2 +", " +fmax2+")" , "q", "alpha", true, folder, "FSQ5", c1   );
+        MultiChart.openAndStore( FSQS6, "6 alpha( s,q ) (" + fmin2 +", " +fmax2+")" , "q", "alpha", true, folder, "FSQ6", c1   );
+        MultiChart.openAndStore( FSQS7, "7 alpha( s,q ) (" + fmin2 +", " +fmax2+")" , "q", "alpha", true, folder, "FSQ7", c1   );
+        MultiChart.openAndStore( FSQS8, "8 alpha( s,q ) (" + fmin2 +", " +fmax2+")" , "q", "alpha", true, folder, "FSQ8", c1   );
  
         if( ! justMFDFA ) {
-
-            String folder = ".";
 
             String fn1a = "nodes_total"+ "_" + DOlog;
             String fn2a = "nodes"+ "_" + DOlog;
@@ -172,7 +190,6 @@ public class MFDFAAnalyseTool {
             String fn3 = "volume_total"+ "_" + DOlog;
             String fn4 = "volume"+ "_" + DOlog;
 
-            String c1 = "no comment";
 
             String fnR1 = "ratioA_NN_LN"+ "_" + DOlog;
             String fnR2 = "ratioB_NN_EN"+ "_" + DOlog;
@@ -286,6 +303,8 @@ public class MFDFAAnalyseTool {
 
     private static Messreihe processRow(Messreihe rBMM1, String label, double fMIN, double fMAX) throws Exception {
         stdlib.StdRandom.initRandomGen(1);
+        
+        StringBuffer hsb = new StringBuffer();
 
         Messreihe FSQ = new Messreihe();
         
@@ -293,16 +312,19 @@ public class MFDFAAnalyseTool {
                 DetrendingMethodFactory.MFDFA2);
 
         int order = dfa.getPara().getGradeOfPolynom();
-        dfa.getPara().setzSValues(6000);
+
+        //        dfa.getPara().setzSValues(6000);
 
         System.out.print(dfa.getClass());
 
-        int N = (int) Math.pow(2.0, 18);
+//        int N = (int) Math.pow(2.0, 18);
+        int N = rBMM1.xValues.size();
         dfa.setNrOfValues(N);
 
+        
         // die Werte für die Fensterbreiten sind zu wählen ...
-        dfa.initIntervalS();
-        dfa.showS();
+        dfa.initIntervalS_version5();
+//        dfa.showS();
 
         StringBuffer calcLog = new StringBuffer();
 
@@ -336,20 +358,36 @@ public class MFDFAAnalyseTool {
                 dfa.getPara().setQ(q);
                 dfa.calc();
 
+                dfa.setLogBinning( true );
+                
                 Messreihe mr5 = dfa.getResultsMRLogLog();
 
-                SimpleRegression sr = mr5.linFit( fMIN, fMAX);
-
-                String line = " alpha( q=" + q + " ) = " + df.format( sr.getSlope() );
-
-                System.out.println(line);
-                calcLog.append(line + "\n");
-
-                mr5.setLabel(rBMM1.getLabel() + " (" + q + ")");
-                v.add(mr5);
                 
-                FSQ.addValuePair(q, sr.getSlope());
+                
+                int mToStore = 20;
+                for( int m = 10; m < 35; m = m + 1 ) {
+                
+                    double fMINc = m / 10.0;
+                    double fMAXc = m / 10.0 + 0.5;
+                    double sMIDDLE = (fMAXc - fMINc) / 2.0;
+                    
+                    SimpleRegression sr = mr5.linFit( fMINc, fMAXc);
+                    String line = " alpha( q=" + q + ", ("+fMINc+"..."+fMAXc+")) = " + df.format( sr.getSlope() );
+                    System.out.println(line);
 
+                    hsb.append( df.format( sr.getSlope() ) + "\t" );
+                    
+                    if( m == mToStore ) {
+
+                        mr5.setLabel(rBMM1.getLabel() + " (" + q + ")");
+                        v.add(mr5);
+
+                        calcLog.append(line + "\n");
+                        FSQ.addValuePair(q, sr.getSlope());
+                    }
+                }
+                hsb.append("\n");
+                
                 //        k.add(dfa.getZeitreiheMR());
                 //        k.add(dfa.getProfilMR());
 
@@ -362,8 +400,27 @@ public class MFDFAAnalyseTool {
 
         }
 
+        String fn = "FS_" + label;
+        
         MultiChart.open(v, label + " : fluctuation function F(s,q)", "log(s)", "log(F(s))", true, calcLog.toString());
+        MultiChart.openAndStore(v, label + " : fluctuation function F(s,q)", "log(s)", "log(F(s))", true, "./RUN2", fn, "n.c." );
         //MultiChart.open(k, "Kontrolldaten", "t", "y(t)", false, "?");
+
+        String fnH = fn + "_HURST_MATRIX.csv";
+        BufferedWriter bw = new BufferedWriter( new FileWriter( new File( "./RUN2/"+ fnH ) ) );
+
+        bw.write( "# " + fnH + "\n");
+        bw.write( "# X : s Werte (Spalten) " + "\n" );
+        bw.write( "# Y : q Werte (Zeilen) " + "\n" );
+        bw.write( hsb.toString());
+
+        bw.flush();
+        bw.close();
+               
+        System.out.println( ">>>" + fnH + "<<<" );
+        System.out.println( ">>> X : s Werte (Spalten) " );
+        System.out.println( ">>> Y : q Werte (Zeilen) " );
+        System.out.println( hsb.toString() );
         
         return FSQ;
     }

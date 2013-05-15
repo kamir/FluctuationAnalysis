@@ -265,6 +265,9 @@ public class DFAmulti extends DFACore {
     public void initIntervalS_version4() {
         this.initIntervalSlog();
     }
+    public void initIntervalS_version5() {
+        this.initIntervalSlog();
+    }
 
     public void initIntervalS_FULL() {
       throw new UnsupportedOperationException("Not supported any more.");
@@ -283,6 +286,10 @@ public class DFAmulti extends DFACore {
     private void _initFelder() {
         initF();
         FSMW = new double[2][rangeS];
+    }
+
+    public void setLogBinning(boolean b) {
+        throw new UnsupportedOperationException("Not supported yet.");
     }
 
 }
