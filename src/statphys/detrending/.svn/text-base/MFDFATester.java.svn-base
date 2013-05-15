@@ -1,0 +1,96 @@
+package statphys.detrending;
+
+import charts.MultiChart;
+import data.series.Messreihe;
+import java.util.Vector;
+import statphys.detrending.methods.IDetrendingMethod;
+import stdlib.StdDraw;
+import stdlib.StdStats;
+
+public class DFATester {
+
+    public static void main(String args[]) {
+
+        stdlib.StdRandom.initRandomGen(1);
+
+        // Durch 4 TEILBAR !!!
+        int N = 8000;
+
+        // Wie wollen wir die Daten übergeben?
+
+        /**
+         * Vorbedingungen:
+         *
+         * Eine Zeitreihe mit bereinigten Werten, ohne Lücken, ausser
+         * es hat einen fahlichen Sinn, Lücken zu nutzen.
+         */
+        double[] zr = new double[N];
+        double[] zr2 = new double[N];
+        double[] zr3 = new double[N];
+
+        Messreihe d1 = TestDataFactory.getDataSeriesRandomValues(N);
+        Messreihe d2 = TestDataFactory.getDataSeriesRandomValues2(N);
+        Messreihe d3 = TestDataFactory.getDataSeriesRandomValues3(N);
+        
+        zr = d1.getData()[1];
+        zr2 = d2.getData()[1];
+        zr3 = d3.getData()[1];
+
+        IDetrendingMethod dfa = DetrendingMethodFactory.getDetrendingMethod(DetrendingMethodFactory.DFA2);
+        int order = dfa.getPara().getGradeOfPolynom();
+        dfa.getPara().setzSValues( 240 );
+
+
+
+        // Anzahl der Werte in der Zeitreihe
+        dfa.setNrOfValues(N);
+
+        // die Werte für die Fensterbreiten sind zu wählen ...
+        dfa.initIntervalS();
+        dfa.showS();
+
+
+
+        // nun wird das Array mit den Daten der ZR übergeben
+        dfa.setZR(zr);
+
+        // Start der Berechnung
+        dfa.calc();
+
+
+        // Kontrolle
+        Vector<Messreihe> k = new Vector<Messreihe>();
+        k.add(dfa.getZeitreiheMR());
+        k.add(dfa.getProfilMR());
+        //k.addAll(dfa.getMRFit());
+
+        // Übergabe der Ergebnisse ...
+        double[][] results = dfa.getResults();
+        Vector<Messreihe> v = new Vector<Messreihe>();
+        Messreihe mr1 = dfa.getResultsMRLogLog();
+        mr1.setLabel( d1.getLabel() );
+        v.add(mr1);
+
+        dfa.setZR(zr2);
+        dfa.calc();
+        Messreihe mr2 = dfa.getResultsMRLogLog();
+        v.add(mr2);
+        mr2.setLabel( d2.getLabel() );
+        k.add(dfa.getZeitreiheMR());
+        k.add(dfa.getProfilMR());
+        
+        dfa.setZR(zr3);
+        dfa.calc();
+        Messreihe mr3 = dfa.getResultsMRLogLog();
+        mr3.setLabel( d3.getLabel() );
+        v.add(mr3);
+        k.add(dfa.getZeitreiheMR());
+        k.add(dfa.getProfilMR());
+        String status = dfa.getStatus();
+
+        System.out.println("> DFA-Status: " + "\n" + status + "\n#s=" + results[1].length);
+
+        MultiChart.open(v, "fluctuation function F(s) [order:" + order + "] ", "log(s)", "log(F(s))", true, "?");
+        MultiChart.open(k, "Kontrolldaten", "t", "y(t)", true, "?");
+    }
+}

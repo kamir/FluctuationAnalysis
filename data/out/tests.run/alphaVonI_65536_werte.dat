@@ -1,0 +1,35 @@
+#
+# M e s s r e i h e 
+# Klasse : class data.series.Messreihe 
+# Label  : alpha( beta )
+#
+# Anzahl Wertepaare = 5
+#
+#
+#
+## X:
+# ==
+# Max    	 max_X=0,90000
+# Min    	 min_X=-0,10000
+# Mean   	 mw__X=0,40000
+# StdAbw 	 std_X=0,39528
+# Var    	 var_X=0,15625
+# Sum    	 sum_X=2,00000
+# Nr     	 nr__X=5
+# 
+# Y:
+# ==
+# Max    	 max_Y=0,93238
+# Min    	 min_Y=0,49128
+# Mean   	 mw__Y=0,68760
+# StdAbw 	 std_Y=0,17843
+# Var    	 var_Y=0,03184
+# Sum    	 sum_Y=3,43800
+# Nr     	 nr__Y=5
+#
+-0,10000 0,49128
+0,15000 0,55724
+0,40000 0,66321
+0,65000 0,79389
+0,90000 0,93238
+#

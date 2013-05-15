@@ -1,0 +1,112 @@
+<html>
+  <head>
+    <script type="text/javascript" src="http://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+      google.load("visualization", "1", {});
+      google.load("prototype", "1.6");
+    </script>
+    
+    <script type="text/javascript" src="http://systemsbiology-visualizations.googlecode.com/svn/trunk/src/main/js/load.js"></script>
+    <script type="text/javascript">
+        systemsbiology.load("visualization", "1.0", {packages:["bioheatmap"]});
+    </script>
+
+    <script type="text/javascript">
+      google.setOnLoadCallback(drawHeatMap);
+      function drawHeatMap() {
+
+var data1 = new google.visualization.DataTable(); 
+ 
+data1.addColumn('string', '?' ); 
+data1.addColumn('number', 's=2.1' ); 
+data1.addColumn('number', 's=2.2' ); 
+data1.addColumn('number', 's=2.3' ); 
+data1.addColumn('number', 's=2.4' ); 
+data1.addColumn('number', 's=2.5' ); 
+data1.addColumn('number', 's=2.6' ); 
+data1.addColumn('number', 's=2.7' ); 
+data1.addColumn('number', 's=2.8' ); 
+data1.addColumn('number', 's=2.9' ); 
+data1.addColumn('number', 's=3.0' ); 
+data1.addColumn('number', 's=3.1' ); 
+data1.addColumn('number', 's=3.2' ); 
+data1.addColumn('number', 's=3.3' ); 
+data1.addColumn('number', 's=3.4' ); 
+
+data1.addRows(4); 
+
+data1.setCell( 0, 0, 'q=1');
+data1.setCell( 1, 0, 'q=2');
+data1.setCell( 2, 0, 'q=3');
+data1.setCell( 3, 0, 'q=4');
+
+data1.setCell( 0, 1, 0.247521123632374);
+data1.setCell( 0, 2, 0.9546872674230313);
+data1.setCell( 0, 3, 0.3883804704633067);
+data1.setCell( 0, 4, 0.7878980482767312);
+data1.setCell( 0, 5, 0.8717532342281931);
+data1.setCell( 0, 6, 0.2792848123703042);
+data1.setCell( 0, 7, 0.39002423286878274);
+data1.setCell( 0, 8, 0.5012498401357957);
+data1.setCell( 0, 9, 0.16891313347987558);
+data1.setCell( 0, 10, 0.3233861666769351);
+data1.setCell( 0, 11, 0.40788043973131316);
+data1.setCell( 0, 12, 0.24318684517305755);
+data1.setCell( 0, 13, 0.9774659454244434);
+data1.setCell( 0, 14, 0.35468305440086045);
+data1.setCell( 1, 1, 0.8022500968128805);
+data1.setCell( 1, 2, 0.2553477219357526);
+data1.setCell( 1, 3, 0.9528075482851568);
+data1.setCell( 1, 4, 0.8172932127435744);
+data1.setCell( 1, 5, 0.1623884531433536);
+data1.setCell( 1, 6, 0.5875430981659765);
+data1.setCell( 1, 7, 0.5664719280162729);
+data1.setCell( 1, 8, 0.07211555708719886);
+data1.setCell( 1, 9, 0.5576713865433074);
+data1.setCell( 1, 10, 0.30401731116596586);
+data1.setCell( 1, 11, 0.15552788860260114);
+data1.setCell( 1, 12, 0.3708914052974247);
+data1.setCell( 1, 13, 0.10077269621131946);
+data1.setCell( 1, 14, 0.5233508988628915);
+data1.setCell( 2, 1, 0.4047353119011635);
+data1.setCell( 2, 2, 0.031273466636003056);
+data1.setCell( 2, 3, 0.18436629528944826);
+data1.setCell( 2, 4, 0.8192958993070301);
+data1.setCell( 2, 5, 0.29690646994742886);
+data1.setCell( 2, 6, 0.02989526372776996);
+data1.setCell( 2, 7, 0.8995401579437705);
+data1.setCell( 2, 8, 0.32933246668762006);
+data1.setCell( 2, 9, 0.0039017096552830255);
+data1.setCell( 2, 10, 0.24351899247661657);
+data1.setCell( 2, 11, 0.16310598338485516);
+data1.setCell( 2, 12, 0.5274420903683192);
+data1.setCell( 2, 13, 0.86915677474982);
+data1.setCell( 2, 14, 0.06175528128529606);
+data1.setCell( 3, 1, 0.28792545246718004);
+data1.setCell( 3, 2, 0.5146227413654896);
+data1.setCell( 3, 3, 0.8204261430186713);
+data1.setCell( 3, 4, 0.3657127866240516);
+data1.setCell( 3, 5, 0.17758471586404634);
+data1.setCell( 3, 6, 0.1151616599676728);
+data1.setCell( 3, 7, 0.5165270106388863);
+data1.setCell( 3, 8, 0.4675469485541909);
+data1.setCell( 3, 9, 0.2422994737250782);
+data1.setCell( 3, 10, 0.8288207064158579);
+data1.setCell( 3, 11, 0.6318745305125272);
+data1.setCell( 3, 12, 0.5116694954957385);
+data1.setCell( 3, 13, 0.6147081176630892);
+data1.setCell( 3, 14, 0.8366996725666427);
+
+
+heatmap1 = new org.systemsbiology.visualization.BioHeatMap(document.getElementById('heatmapContainer'));
+heatmap1.draw(data1, {});
+
+
+      }
+    </script>
+  </head>
+
+  <body>
+    <div id="heatmapContainer"></div>
+  </body>
+</html>

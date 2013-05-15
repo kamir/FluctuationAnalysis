@@ -1,0 +1,92 @@
+package statphys.detrending;
+
+import data.series.Messreihe;
+import java.util.Random;
+import stdlib.StdRandom;
+
+
+public class TestDataFactory {
+
+    /**
+     * Gleichverteilte ZZ zw. 0 und 1
+     *
+     * @param z
+     * @return
+     */
+    public static double[] getRandomValues( int z ) {
+        double[] data = new double[z];
+        for( int i = 0; i < z; i++ ) {
+            data[i] =StdRandom.uniform();
+        }
+        return data;
+    };
+
+    /**
+     * Random Walk
+     */
+    public static Messreihe getDataSeriesRandomValues( int z ) {
+        Messreihe mr = new Messreihe();
+        mr.setLabel("Random Walk");
+        double y=0;
+         for( int i = 0; i < z; i++ ) {
+            y= y+StdRandom.uniform(-1,1); // random walk => alpha ~1,5
+            mr.addValuePair( i * 1.0, y );
+        }
+        return mr;
+    };
+
+    /**
+     * Gleichverteilt
+     *
+     * StdRandom.uniform();
+     *
+     */
+    public static Messreihe getDataSeriesRandomValues2( int z ) {
+        Messreihe mr = new Messreihe();
+        mr.setLabel("Gleich");
+        double y=0;
+         for( int i = 0; i < z; i++ ) {
+            y= StdRandom.uniform(-1,1); // ???   => alpha ~???
+            mr.addValuePair( i * 1.0, y );
+        }
+        return mr;
+    };
+
+    /**
+     * Gaussverteilt
+     *
+     * StdRandom.gaussian();
+     *
+     */
+    public static Messreihe getDataSeriesRandomValues3( int z ) {
+        Messreihe mr = new Messreihe();
+        mr.setLabel("Gauss");
+        double y=0;
+         for( int i = 0; i < z; i++ ) {
+            y= StdRandom.gaussian( 0.0, 2 ); // random  => alpha ~0,5
+            mr.addValuePair( i * 1.0, y );
+        }
+        return mr;
+    };
+
+
+
+    /**
+     * Java-Standard Zufallszahlen ...
+     *
+     * StdRandom.gaussian();
+     *
+     */
+    public static Messreihe getDataSeriesRandomValues_JAVA_CORE( int z ) {
+        Random rand = new Random();
+
+        Messreihe mr = new Messreihe();
+        mr.setLabel("JAVA");
+        double y=0;
+         for( int i = 0; i < z; i++ ) {
+            y = rand.nextGaussian(); // random  => alpha ~0,5
+            mr.addValuePair( i * 1.0, y );
+        }
+        return mr;
+    };
+}

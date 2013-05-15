@@ -1,0 +1,1840 @@
+
+C:\DEV\FluctuationAnalysis\bin>cd .. 
+
+C:\DEV\FluctuationAnalysis>cd dist 
+
+C:\DEV\FluctuationAnalysis\dist>java -cp FluctuationAnalysis.jar statphys.detrending.MultiDFA4Buckets en_ons0_IDS.dat.tsb.vec.seq -Djavax.xml.parsers.DocumentBuilderFactory=com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderFactoryImpl  
+true
+> bucket tool base: C:\DEV\FluctuationAnalysis\dist\.
+> bucket limit    : 2147483647
+[                          main] Configuration                  ERROR Failed to set setXIncludeAware(true) for parser gnu.xml.dom.JAXPFactory@7fdcde:java.lang.UnsupportedOperationException: This parser does not support specification "null" version "null"
+java.lang.UnsupportedOperationException: This parser does not support specification "null" version "null"
+	at javax.xml.parsers.DocumentBuilderFactory.setXIncludeAware(Unknown Source)
+	at org.apache.hadoop.conf.Configuration.loadResource(Configuration.java:1275)
+	at org.apache.hadoop.conf.Configuration.loadResources(Configuration.java:1251)
+	at org.apache.hadoop.conf.Configuration.getProps(Configuration.java:1192)
+	at org.apache.hadoop.conf.Configuration.get(Configuration.java:493)
+	at org.apache.hadoop.fs.FileSystem.getDefaultUri(FileSystem.java:119)
+	at org.apache.hadoop.fs.FileSystem.get(FileSystem.java:111)
+	at hadoopts.data.TSBucket.loadFromLocalFS(TSBucket.java:102)
+	at hadoopts.BucketLoader.loadBucket(BucketLoader.java:16)
+	at hadoopts.BucketTool.loadBucket(BucketTool.java:26)
+	at statphys.detrending.MultiDFA4Buckets.main(MultiDFA4Buckets.java:42)
+[                          main] Configuration                  ERROR Failed to set setXIncludeAware(true) for parser gnu.xml.dom.JAXPFactory@e80a59:java.lang.UnsupportedOperationException: This parser does not support specification "null" version "null"
+java.lang.UnsupportedOperationException: This parser does not support specification "null" version "null"
+	at javax.xml.parsers.DocumentBuilderFactory.setXIncludeAware(Unknown Source)
+	at org.apache.hadoop.conf.Configuration.loadResource(Configuration.java:1275)
+	at org.apache.hadoop.conf.Configuration.loadResources(Configuration.java:1251)
+	at org.apache.hadoop.conf.Configuration.getProps(Configuration.java:1192)
+	at org.apache.hadoop.conf.Configuration.get(Configuration.java:493)
+	at org.apache.hadoop.fs.FileSystem.getDefaultUri(FileSystem.java:119)
+	at org.apache.hadoop.fs.FileSystem.get(FileSystem.java:111)
+	at hadoopts.data.TSBucket.loadFromLocalFS(TSBucket.java:102)
+	at hadoopts.BucketLoader.loadBucket(BucketLoader.java:16)
+	at hadoopts.BucketTool.loadBucket(BucketTool.java:26)
+	at statphys.detrending.MultiDFA4Buckets.main(MultiDFA4Buckets.java:42)
+[                          main] Configuration                  ERROR Failed to set setXIncludeAware(true) for parser gnu.xml.dom.JAXPFactory@a18aa2:java.lang.UnsupportedOperationException: This parser does not support specification "null" version "null"
+java.lang.UnsupportedOperationException: This parser does not support specification "null" version "null"
+	at javax.xml.parsers.DocumentBuilderFactory.setXIncludeAware(Unknown Source)
+	at org.apache.hadoop.conf.Configuration.loadResource(Configuration.java:1275)
+	at org.apache.hadoop.conf.Configuration.loadResources(Configuration.java:1251)
+	at org.apache.hadoop.conf.Configuration.getProps(Configuration.java:1192)
+	at org.apache.hadoop.conf.Configuration.get(Configuration.java:415)
+	at org.apache.hadoop.security.UserGroupInformation.initialize(UserGroupInformation.java:229)
+	at org.apache.hadoop.security.UserGroupInformation.ensureInitialized(UserGroupInformation.java:219)
+	at org.apache.hadoop.security.UserGroupInformation.isSecurityEnabled(UserGroupInformation.java:297)
+	at org.apache.hadoop.security.KerberosName.<clinit>(KerberosName.java:83)
+	at org.apache.hadoop.security.UserGroupInformation.ensureInitialized(UserGroupInformation.java:219)
+	at org.apache.hadoop.security.UserGroupInformation.isSecurityEnabled(UserGroupInformation.java:297)
+	at org.apache.hadoop.security.UserGroupInformation.getLoginUser(UserGroupInformation.java:516)
+	at org.apache.hadoop.security.UserGroupInformation.getCurrentUser(UserGroupInformation.java:499)
+	at org.apache.hadoop.fs.FileSystem$Cache$Key.<init>(FileSystem.java:1717)
+	at org.apache.hadoop.fs.FileSystem$Cache$Key.<init>(FileSystem.java:1710)
+	at org.apache.hadoop.fs.FileSystem$Cache.get(FileSystem.java:1578)
+	at org.apache.hadoop.fs.FileSystem.get(FileSystem.java:228)
+	at org.apache.hadoop.fs.FileSystem.get(FileSystem.java:111)
+	at hadoopts.data.TSBucket.loadFromLocalFS(TSBucket.java:102)
+	at hadoopts.BucketLoader.loadBucket(BucketLoader.java:16)
+	at hadoopts.BucketTool.loadBucket(BucketTool.java:26)
+	at statphys.detrending.MultiDFA4Buckets.main(MultiDFA4Buckets.java:42)
+[                          main] Configuration                  ERROR Failed to set setXIncludeAware(true) for parser gnu.xml.dom.JAXPFactory@14fe5c:java.lang.UnsupportedOperationException: This parser does not support specification "null" version "null"
+java.lang.UnsupportedOperationException: This parser does not support specification "null" version "null"
+	at javax.xml.parsers.DocumentBuilderFactory.setXIncludeAware(Unknown Source)
+	at org.apache.hadoop.conf.Configuration.loadResource(Configuration.java:1275)
+	at org.apache.hadoop.conf.Configuration.loadResources(Configuration.java:1251)
+	at org.apache.hadoop.conf.Configuration.getProps(Configuration.java:1192)
+	at org.apache.hadoop.conf.Configuration.get(Configuration.java:415)
+	at org.apache.hadoop.security.UserGroupInformation.initialize(UserGroupInformation.java:229)
+	at org.apache.hadoop.security.UserGroupInformation.ensureInitialized(UserGroupInformation.java:219)
+	at org.apache.hadoop.security.UserGroupInformation.isSecurityEnabled(UserGroupInformation.java:297)
+	at org.apache.hadoop.security.KerberosName.<clinit>(KerberosName.java:83)
+	at org.apache.hadoop.security.UserGroupInformation.ensureInitialized(UserGroupInformation.java:219)
+	at org.apache.hadoop.security.UserGroupInformation.isSecurityEnabled(UserGroupInformation.java:297)
+	at org.apache.hadoop.security.UserGroupInformation.getLoginUser(UserGroupInformation.java:516)
+	at org.apache.hadoop.security.UserGroupInformation.getCurrentUser(UserGroupInformation.java:499)
+	at org.apache.hadoop.fs.FileSystem$Cache$Key.<init>(FileSystem.java:1717)
+	at org.apache.hadoop.fs.FileSystem$Cache$Key.<init>(FileSystem.java:1710)
+	at org.apache.hadoop.fs.FileSystem$Cache.get(FileSystem.java:1578)
+	at org.apache.hadoop.fs.FileSystem.get(FileSystem.java:228)
+	at org.apache.hadoop.fs.FileSystem.get(FileSystem.java:111)
+	at hadoopts.data.TSBucket.loadFromLocalFS(TSBucket.java:102)
+	at hadoopts.BucketLoader.loadBucket(BucketLoader.java:16)
+	at hadoopts.BucketTool.loadBucket(BucketTool.java:26)
+	at statphys.detrending.MultiDFA4Buckets.main(MultiDFA4Buckets.java:42)
+[                          main] Configuration                  ERROR Failed to set setXIncludeAware(true) for parser gnu.xml.dom.JAXPFactory@360be0:java.lang.UnsupportedOperationException: This parser does not support specification "null" version "null"
+java.lang.UnsupportedOperationException: This parser does not support specification "null" version "null"
+	at javax.xml.parsers.DocumentBuilderFactory.setXIncludeAware(Unknown Source)
+	at org.apache.hadoop.conf.Configuration.loadResource(Configuration.java:1275)
+	at org.apache.hadoop.conf.Configuration.loadResources(Configuration.java:1251)
+	at org.apache.hadoop.conf.Configuration.getProps(Configuration.java:1192)
+	at org.apache.hadoop.conf.Configuration.get(Configuration.java:415)
+	at org.apache.hadoop.conf.Configuration.getTrimmed(Configuration.java:432)
+	at org.apache.hadoop.conf.Configuration.getLong(Configuration.java:544)
+	at org.apache.hadoop.security.Groups.<init>(Groups.java:55)
+	at org.apache.hadoop.security.Groups.getUserToGroupsMappingService(Groups.java:137)
+	at org.apache.hadoop.security.UserGroupInformation.initialize(UserGroupInformation.java:241)
+	at org.apache.hadoop.security.UserGroupInformation.ensureInitialized(UserGroupInformation.java:219)
+	at org.apache.hadoop.security.UserGroupInformation.isSecurityEnabled(UserGroupInformation.java:297)
+	at org.apache.hadoop.security.KerberosName.<clinit>(KerberosName.java:83)
+	at org.apache.hadoop.security.UserGroupInformation.ensureInitialized(UserGroupInformation.java:219)
+	at org.apache.hadoop.security.UserGroupInformation.isSecurityEnabled(UserGroupInformation.java:297)
+	at org.apache.hadoop.security.UserGroupInformation.getLoginUser(UserGroupInformation.java:516)
+	at org.apache.hadoop.security.UserGroupInformation.getCurrentUser(UserGroupInformation.java:499)
+	at org.apache.hadoop.fs.FileSystem$Cache$Key.<init>(FileSystem.java:1717)
+	at org.apache.hadoop.fs.FileSystem$Cache$Key.<init>(FileSystem.java:1710)
+	at org.apache.hadoop.fs.FileSystem$Cache.get(FileSystem.java:1578)
+	at org.apache.hadoop.fs.FileSystem.get(FileSystem.java:228)
+	at org.apache.hadoop.fs.FileSystem.get(FileSystem.java:111)
+	at hadoopts.data.TSBucket.loadFromLocalFS(TSBucket.java:102)
+	at hadoopts.BucketLoader.loadBucket(BucketLoader.java:16)
+	at hadoopts.BucketTool.loadBucket(BucketTool.java:26)
+	at statphys.detrending.MultiDFA4Buckets.main(MultiDFA4Buckets.java:42)
+[                          main] Configuration                  ERROR Failed to set setXIncludeAware(true) for parser gnu.xml.dom.JAXPFactory@126b249:java.lang.UnsupportedOperationException: This parser does not support specification "null" version "null"
+java.lang.UnsupportedOperationException: This parser does not support specification "null" version "null"
+	at javax.xml.parsers.DocumentBuilderFactory.setXIncludeAware(Unknown Source)
+	at org.apache.hadoop.conf.Configuration.loadResource(Configuration.java:1275)
+	at org.apache.hadoop.conf.Configuration.loadResources(Configuration.java:1251)
+	at org.apache.hadoop.conf.Configuration.getProps(Configuration.java:1192)
+	at org.apache.hadoop.conf.Configuration.get(Configuration.java:415)
+	at org.apache.hadoop.conf.Configuration.getTrimmed(Configuration.java:432)
+	at org.apache.hadoop.conf.Configuration.getLong(Configuration.java:544)
+	at org.apache.hadoop.security.Groups.<init>(Groups.java:55)
+	at org.apache.hadoop.security.Groups.getUserToGroupsMappingService(Groups.java:137)
+	at org.apache.hadoop.security.UserGroupInformation.initialize(UserGroupInformation.java:241)
+	at org.apache.hadoop.security.UserGroupInformation.ensureInitialized(UserGroupInformation.java:219)
+	at org.apache.hadoop.security.UserGroupInformation.isSecurityEnabled(UserGroupInformation.java:297)
+	at org.apache.hadoop.security.KerberosName.<clinit>(KerberosName.java:83)
+	at org.apache.hadoop.security.UserGroupInformation.ensureInitialized(UserGroupInformation.java:219)
+	at org.apache.hadoop.security.UserGroupInformation.isSecurityEnabled(UserGroupInformation.java:297)
+	at org.apache.hadoop.security.UserGroupInformation.getLoginUser(UserGroupInformation.java:516)
+	at org.apache.hadoop.security.UserGroupInformation.getCurrentUser(UserGroupInformation.java:499)
+	at org.apache.hadoop.fs.FileSystem$Cache$Key.<init>(FileSystem.java:1717)
+	at org.apache.hadoop.fs.FileSystem$Cache$Key.<init>(FileSystem.java:1710)
+	at org.apache.hadoop.fs.FileSystem$Cache.get(FileSystem.java:1578)
+	at org.apache.hadoop.fs.FileSystem.get(FileSystem.java:228)
+	at org.apache.hadoop.fs.FileSystem.get(FileSystem.java:111)
+	at hadoopts.data.TSBucket.loadFromLocalFS(TSBucket.java:102)
+	at hadoopts.BucketLoader.loadBucket(BucketLoader.java:16)
+	at hadoopts.BucketTool.loadBucket(BucketTool.java:26)
+	at statphys.detrending.MultiDFA4Buckets.main(MultiDFA4Buckets.java:42)
+[                          main] Configuration                  ERROR Failed to set setXIncludeAware(true) for parser gnu.xml.dom.JAXPFactory@6b97fd:java.lang.UnsupportedOperationException: This parser does not support specification "null" version "null"
+java.lang.UnsupportedOperationException: This parser does not support specification "null" version "null"
+	at javax.xml.parsers.DocumentBuilderFactory.setXIncludeAware(Unknown Source)
+	at org.apache.hadoop.conf.Configuration.loadResource(Configuration.java:1275)
+	at org.apache.hadoop.conf.Configuration.loadResources(Configuration.java:1251)
+	at org.apache.hadoop.conf.Configuration.getProps(Configuration.java:1192)
+	at org.apache.hadoop.conf.Configuration.get(Configuration.java:415)
+	at org.apache.hadoop.conf.Configuration.getTrimmed(Configuration.java:432)
+	at org.apache.hadoop.conf.Configuration.getLong(Configuration.java:544)
+	at org.apache.hadoop.security.Groups.<init>(Groups.java:55)
+	at org.apache.hadoop.security.Groups.getUserToGroupsMappingService(Groups.java:137)
+	at org.apache.hadoop.security.UserGroupInformation.initialize(UserGroupInformation.java:241)
+	at org.apache.hadoop.security.UserGroupInformation.ensureInitialized(UserGroupInformation.java:219)
+	at org.apache.hadoop.security.UserGroupInformation.isSecurityEnabled(UserGroupInformation.java:297)
+	at org.apache.hadoop.security.KerberosName.<clinit>(KerberosName.java:83)
+	at org.apache.hadoop.security.UserGroupInformation.ensureInitialized(UserGroupInformation.java:219)
+	at org.apache.hadoop.security.UserGroupInformation.isSecurityEnabled(UserGroupInformation.java:297)
+	at org.apache.hadoop.security.UserGroupInformation.getLoginUser(UserGroupInformation.java:516)
+	at org.apache.hadoop.security.UserGroupInformation.getCurrentUser(UserGroupInformation.java:499)
+	at org.apache.hadoop.fs.FileSystem$Cache$Key.<init>(FileSystem.java:1717)
+	at org.apache.hadoop.fs.FileSystem$Cache$Key.<init>(FileSystem.java:1710)
+	at org.apache.hadoop.fs.FileSystem$Cache.get(FileSystem.java:1578)
+	at org.apache.hadoop.fs.FileSystem.get(FileSystem.java:228)
+	at org.apache.hadoop.fs.FileSystem.get(FileSystem.java:111)
+	at hadoopts.data.TSBucket.loadFromLocalFS(TSBucket.java:102)
+	at hadoopts.BucketLoader.loadBucket(BucketLoader.java:16)
+	at hadoopts.BucketTool.loadBucket(BucketTool.java:26)
+	at statphys.detrending.MultiDFA4Buckets.main(MultiDFA4Buckets.java:42)
+[                          main] Configuration                  ERROR Failed to set setXIncludeAware(true) for parser gnu.xml.dom.JAXPFactory@15ff48b:java.lang.UnsupportedOperationException: This parser does not support specification "null" version "null"
+java.lang.UnsupportedOperationException: This parser does not support specification "null" version "null"
+	at javax.xml.parsers.DocumentBuilderFactory.setXIncludeAware(Unknown Source)
+	at org.apache.hadoop.conf.Configuration.loadResource(Configuration.java:1275)
+	at org.apache.hadoop.conf.Configuration.loadResources(Configuration.java:1251)
+	at org.apache.hadoop.conf.Configuration.getProps(Configuration.java:1192)
+	at org.apache.hadoop.conf.Configuration.get(Configuration.java:415)
+	at org.apache.hadoop.conf.Configuration.getTrimmed(Configuration.java:432)
+	at org.apache.hadoop.conf.Configuration.getLong(Configuration.java:544)
+	at org.apache.hadoop.security.Groups.<init>(Groups.java:55)
+	at org.apache.hadoop.security.Groups.getUserToGroupsMappingService(Groups.java:137)
+	at org.apache.hadoop.security.UserGroupInformation.initialize(UserGroupInformation.java:241)
+	at org.apache.hadoop.security.UserGroupInformation.ensureInitialized(UserGroupInformation.java:219)
+	at org.apache.hadoop.security.UserGroupInformation.isSecurityEnabled(UserGroupInformation.java:297)
+	at org.apache.hadoop.security.KerberosName.<clinit>(KerberosName.java:83)
+	at org.apache.hadoop.security.UserGroupInformation.ensureInitialized(UserGroupInformation.java:219)
+	at org.apache.hadoop.security.UserGroupInformation.isSecurityEnabled(UserGroupInformation.java:297)
+	at org.apache.hadoop.security.UserGroupInformation.getLoginUser(UserGroupInformation.java:516)
+	at org.apache.hadoop.security.UserGroupInformation.getCurrentUser(UserGroupInformation.java:499)
+	at org.apache.hadoop.fs.FileSystem$Cache$Key.<init>(FileSystem.java:1717)
+	at org.apache.hadoop.fs.FileSystem$Cache$Key.<init>(FileSystem.java:1710)
+	at org.apache.hadoop.fs.FileSystem$Cache.get(FileSystem.java:1578)
+	at org.apache.hadoop.fs.FileSystem.get(FileSystem.java:228)
+	at org.apache.hadoop.fs.FileSystem.get(FileSystem.java:111)
+	at hadoopts.data.TSBucket.loadFromLocalFS(TSBucket.java:102)
+	at hadoopts.BucketLoader.loadBucket(BucketLoader.java:16)
+	at hadoopts.BucketTool.loadBucket(BucketTool.java:26)
+	at statphys.detrending.MultiDFA4Buckets.main(MultiDFA4Buckets.java:42)
+[                          main] Configuration                  ERROR Failed to set setXIncludeAware(true) for parser gnu.xml.dom.JAXPFactory@187aeca:java.lang.UnsupportedOperationException: This parser does not support specification "null" version "null"
+java.lang.UnsupportedOperationException: This parser does not support specification "null" version "null"
+	at javax.xml.parsers.DocumentBuilderFactory.setXIncludeAware(Unknown Source)
+	at org.apache.hadoop.conf.Configuration.loadResource(Configuration.java:1275)
+	at org.apache.hadoop.conf.Configuration.loadResources(Configuration.java:1251)
+	at org.apache.hadoop.conf.Configuration.getProps(Configuration.java:1192)
+	at org.apache.hadoop.conf.Configuration.get(Configuration.java:415)
+	at org.apache.hadoop.security.UserGroupInformation.initialize(UserGroupInformation.java:229)
+	at org.apache.hadoop.security.UserGroupInformation.ensureInitialized(UserGroupInformation.java:219)
+	at org.apache.hadoop.security.UserGroupInformation.isSecurityEnabled(UserGroupInformation.java:297)
+	at org.apache.hadoop.security.UserGroupInformation.getLoginUser(UserGroupInformation.java:516)
+	at org.apache.hadoop.security.UserGroupInformation.getCurrentUser(UserGroupInformation.java:499)
+	at org.apache.hadoop.fs.FileSystem$Cache$Key.<init>(FileSystem.java:1717)
+	at org.apache.hadoop.fs.FileSystem$Cache$Key.<init>(FileSystem.java:1710)
+	at org.apache.hadoop.fs.FileSystem$Cache.get(FileSystem.java:1578)
+	at org.apache.hadoop.fs.FileSystem.get(FileSystem.java:228)
+	at org.apache.hadoop.fs.FileSystem.get(FileSystem.java:111)
+	at hadoopts.data.TSBucket.loadFromLocalFS(TSBucket.java:102)
+	at hadoopts.BucketLoader.loadBucket(BucketLoader.java:16)
+	at hadoopts.BucketTool.loadBucket(BucketTool.java:26)
+	at statphys.detrending.MultiDFA4Buckets.main(MultiDFA4Buckets.java:42)
+[                          main] Configuration                  ERROR Failed to set setXIncludeAware(true) for parser gnu.xml.dom.JAXPFactory@e48e1b:java.lang.UnsupportedOperationException: This parser does not support specification "null" version "null"
+java.lang.UnsupportedOperationException: This parser does not support specification "null" version "null"
+	at javax.xml.parsers.DocumentBuilderFactory.setXIncludeAware(Unknown Source)
+	at org.apache.hadoop.conf.Configuration.loadResource(Configuration.java:1275)
+	at org.apache.hadoop.conf.Configuration.loadResources(Configuration.java:1251)
+	at org.apache.hadoop.conf.Configuration.getProps(Configuration.java:1192)
+	at org.apache.hadoop.conf.Configuration.get(Configuration.java:415)
+	at org.apache.hadoop.security.UserGroupInformation.initialize(UserGroupInformation.java:229)
+	at org.apache.hadoop.security.UserGroupInformation.ensureInitialized(UserGroupInformation.java:219)
+	at org.apache.hadoop.security.UserGroupInformation.isSecurityEnabled(UserGroupInformation.java:297)
+	at org.apache.hadoop.security.UserGroupInformation.getLoginUser(UserGroupInformation.java:516)
+	at org.apache.hadoop.security.UserGroupInformation.getCurrentUser(UserGroupInformation.java:499)
+	at org.apache.hadoop.fs.FileSystem$Cache$Key.<init>(FileSystem.java:1717)
+	at org.apache.hadoop.fs.FileSystem$Cache$Key.<init>(FileSystem.java:1710)
+	at org.apache.hadoop.fs.FileSystem$Cache.get(FileSystem.java:1578)
+	at org.apache.hadoop.fs.FileSystem.get(FileSystem.java:228)
+	at org.apache.hadoop.fs.FileSystem.get(FileSystem.java:111)
+	at hadoopts.data.TSBucket.loadFromLocalFS(TSBucket.java:102)
+	at hadoopts.BucketLoader.loadBucket(BucketLoader.java:16)
+	at hadoopts.BucketTool.loadBucket(BucketTool.java:26)
+	at statphys.detrending.MultiDFA4Buckets.main(MultiDFA4Buckets.java:42)
+[                          main] Configuration                  ERROR Failed to set setXIncludeAware(true) for parser gnu.xml.dom.JAXPFactory@12dacd1:java.lang.UnsupportedOperationException: This parser does not support specification "null" version "null"
+java.lang.UnsupportedOperationException: This parser does not support specification "null" version "null"
+	at javax.xml.parsers.DocumentBuilderFactory.setXIncludeAware(Unknown Source)
+	at org.apache.hadoop.conf.Configuration.loadResource(Configuration.java:1275)
+	at org.apache.hadoop.conf.Configuration.loadResources(Configuration.java:1251)
+	at org.apache.hadoop.conf.Configuration.getProps(Configuration.java:1192)
+	at org.apache.hadoop.conf.Configuration.get(Configuration.java:415)
+	at org.apache.hadoop.security.UserGroupInformation.initialize(UserGroupInformation.java:229)
+	at org.apache.hadoop.security.UserGroupInformation.ensureInitialized(UserGroupInformation.java:219)
+	at org.apache.hadoop.security.UserGroupInformation.isSecurityEnabled(UserGroupInformation.java:297)
+	at org.apache.hadoop.security.UserGroupInformation.getLoginUser(UserGroupInformation.java:516)
+	at org.apache.hadoop.security.UserGroupInformation.getCurrentUser(UserGroupInformation.java:499)
+	at org.apache.hadoop.fs.FileSystem$Cache$Key.<init>(FileSystem.java:1717)
+	at org.apache.hadoop.fs.FileSystem$Cache$Key.<init>(FileSystem.java:1710)
+	at org.apache.hadoop.fs.FileSystem$Cache.get(FileSystem.java:1578)
+	at org.apache.hadoop.fs.FileSystem.get(FileSystem.java:228)
+	at org.apache.hadoop.fs.FileSystem.get(FileSystem.java:111)
+	at hadoopts.data.TSBucket.loadFromLocalFS(TSBucket.java:102)
+	at hadoopts.BucketLoader.loadBucket(BucketLoader.java:16)
+	at hadoopts.BucketTool.loadBucket(BucketTool.java:26)
+	at statphys.detrending.MultiDFA4Buckets.main(MultiDFA4Buckets.java:42)
+[                          main] Configuration                  ERROR Failed to set setXIncludeAware(true) for parser gnu.xml.dom.JAXPFactory@f72617:java.lang.UnsupportedOperationException: This parser does not support specification "null" version "null"
+java.lang.UnsupportedOperationException: This parser does not support specification "null" version "null"
+	at javax.xml.parsers.DocumentBuilderFactory.setXIncludeAware(Unknown Source)
+	at org.apache.hadoop.conf.Configuration.loadResource(Configuration.java:1275)
+	at org.apache.hadoop.conf.Configuration.loadResources(Configuration.java:1251)
+	at org.apache.hadoop.conf.Configuration.getProps(Configuration.java:1192)
+	at org.apache.hadoop.conf.Configuration.get(Configuration.java:415)
+	at org.apache.hadoop.security.UserGroupInformation.initialize(UserGroupInformation.java:229)
+	at org.apache.hadoop.security.UserGroupInformation.ensureInitialized(UserGroupInformation.java:219)
+	at org.apache.hadoop.security.UserGroupInformation.isSecurityEnabled(UserGroupInformation.java:297)
+	at org.apache.hadoop.security.UserGroupInformation.getLoginUser(UserGroupInformation.java:516)
+	at org.apache.hadoop.security.UserGroupInformation.getCurrentUser(UserGroupInformation.java:499)
+	at org.apache.hadoop.fs.FileSystem$Cache$Key.<init>(FileSystem.java:1717)
+	at org.apache.hadoop.fs.FileSystem$Cache$Key.<init>(FileSystem.java:1710)
+	at org.apache.hadoop.fs.FileSystem$Cache.get(FileSystem.java:1578)
+	at org.apache.hadoop.fs.FileSystem.get(FileSystem.java:228)
+	at org.apache.hadoop.fs.FileSystem.get(FileSystem.java:111)
+	at hadoopts.data.TSBucket.loadFromLocalFS(TSBucket.java:102)
+	at hadoopts.BucketLoader.loadBucket(BucketLoader.java:16)
+	at hadoopts.BucketTool.loadBucket(BucketTool.java:26)
+	at statphys.detrending.MultiDFA4Buckets.main(MultiDFA4Buckets.java:42)
+[                          main] UserGroupInformation           INFO  JAAS Configuration already set up for Hadoop, not re-installing.
+[                          main] Configuration                  ERROR Failed to set setXIncludeAware(true) for parser gnu.xml.dom.JAXPFactory@c21495:java.lang.UnsupportedOperationException: This parser does not support specification "null" version "null"
+java.lang.UnsupportedOperationException: This parser does not support specification "null" version "null"
+	at javax.xml.parsers.DocumentBuilderFactory.setXIncludeAware(Unknown Source)
+	at org.apache.hadoop.conf.Configuration.loadResource(Configuration.java:1275)
+	at org.apache.hadoop.conf.Configuration.loadResources(Configuration.java:1251)
+	at org.apache.hadoop.conf.Configuration.getProps(Configuration.java:1192)
+	at org.apache.hadoop.conf.Configuration.get(Configuration.java:415)
+	at org.apache.hadoop.conf.Configuration.getTrimmed(Configuration.java:432)
+	at org.apache.hadoop.conf.Configuration.getClass(Configuration.java:990)
+	at org.apache.hadoop.fs.FileSystem.createFileSystem(FileSystem.java:1557)
+	at org.apache.hadoop.fs.FileSystem.access$200(FileSystem.java:67)
+	at org.apache.hadoop.fs.FileSystem$Cache.getInternal(FileSystem.java:1597)
+	at org.apache.hadoop.fs.FileSystem$Cache.get(FileSystem.java:1579)
+	at org.apache.hadoop.fs.FileSystem.get(FileSystem.java:228)
+	at org.apache.hadoop.fs.FileSystem.get(FileSystem.java:111)
+	at hadoopts.data.TSBucket.loadFromLocalFS(TSBucket.java:102)
+	at hadoopts.BucketLoader.loadBucket(BucketLoader.java:16)
+	at hadoopts.BucketTool.loadBucket(BucketTool.java:26)
+	at statphys.detrending.MultiDFA4Buckets.main(MultiDFA4Buckets.java:42)
+[                          main] Configuration                  ERROR Failed to set setXIncludeAware(true) for parser gnu.xml.dom.JAXPFactory@c2ea3f:java.lang.UnsupportedOperationException: This parser does not support specification "null" version "null"
+java.lang.UnsupportedOperationException: This parser does not support specification "null" version "null"
+	at javax.xml.parsers.DocumentBuilderFactory.setXIncludeAware(Unknown Source)
+	at org.apache.hadoop.conf.Configuration.loadResource(Configuration.java:1275)
+	at org.apache.hadoop.conf.Configuration.loadResources(Configuration.java:1251)
+	at org.apache.hadoop.conf.Configuration.getProps(Configuration.java:1192)
+	at org.apache.hadoop.conf.Configuration.get(Configuration.java:415)
+	at org.apache.hadoop.conf.Configuration.getTrimmed(Configuration.java:432)
+	at org.apache.hadoop.conf.Configuration.getClass(Configuration.java:990)
+	at org.apache.hadoop.fs.FileSystem.createFileSystem(FileSystem.java:1557)
+	at org.apache.hadoop.fs.FileSystem.access$200(FileSystem.java:67)
+	at org.apache.hadoop.fs.FileSystem$Cache.getInternal(FileSystem.java:1597)
+	at org.apache.hadoop.fs.FileSystem$Cache.get(FileSystem.java:1579)
+	at org.apache.hadoop.fs.FileSystem.get(FileSystem.java:228)
+	at org.apache.hadoop.fs.FileSystem.get(FileSystem.java:111)
+	at hadoopts.data.TSBucket.loadFromLocalFS(TSBucket.java:102)
+	at hadoopts.BucketLoader.loadBucket(BucketLoader.java:16)
+	at hadoopts.BucketTool.loadBucket(BucketTool.java:26)
+	at statphys.detrending.MultiDFA4Buckets.main(MultiDFA4Buckets.java:42)
+[                          main] Configuration                  ERROR Failed to set setXIncludeAware(true) for parser gnu.xml.dom.JAXPFactory@a0dcd9:java.lang.UnsupportedOperationException: This parser does not support specification "null" version "null"
+java.lang.UnsupportedOperationException: This parser does not support specification "null" version "null"
+	at javax.xml.parsers.DocumentBuilderFactory.setXIncludeAware(Unknown Source)
+	at org.apache.hadoop.conf.Configuration.loadResource(Configuration.java:1275)
+	at org.apache.hadoop.conf.Configuration.loadResources(Configuration.java:1251)
+	at org.apache.hadoop.conf.Configuration.getProps(Configuration.java:1192)
+	at org.apache.hadoop.conf.Configuration.get(Configuration.java:415)
+	at org.apache.hadoop.conf.Configuration.getTrimmed(Configuration.java:432)
+	at org.apache.hadoop.conf.Configuration.getClass(Configuration.java:990)
+	at org.apache.hadoop.fs.FileSystem.createFileSystem(FileSystem.java:1557)
+	at org.apache.hadoop.fs.FileSystem.access$200(FileSystem.java:67)
+	at org.apache.hadoop.fs.FileSystem$Cache.getInternal(FileSystem.java:1597)
+	at org.apache.hadoop.fs.FileSystem$Cache.get(FileSystem.java:1579)
+	at org.apache.hadoop.fs.FileSystem.get(FileSystem.java:228)
+	at org.apache.hadoop.fs.FileSystem.get(FileSystem.java:111)
+	at hadoopts.data.TSBucket.loadFromLocalFS(TSBucket.java:102)
+	at hadoopts.BucketLoader.loadBucket(BucketLoader.java:16)
+	at hadoopts.BucketTool.loadBucket(BucketTool.java:26)
+	at statphys.detrending.MultiDFA4Buckets.main(MultiDFA4Buckets.java:42)
+[                          main] Configuration                  ERROR Failed to set setXIncludeAware(true) for parser gnu.xml.dom.JAXPFactory@b162d5:java.lang.UnsupportedOperationException: This parser does not support specification "null" version "null"
+java.lang.UnsupportedOperationException: This parser does not support specification "null" version "null"
+	at javax.xml.parsers.DocumentBuilderFactory.setXIncludeAware(Unknown Source)
+	at org.apache.hadoop.conf.Configuration.loadResource(Configuration.java:1275)
+	at org.apache.hadoop.conf.Configuration.loadResources(Configuration.java:1251)
+	at org.apache.hadoop.conf.Configuration.getProps(Configuration.java:1192)
+	at org.apache.hadoop.conf.Configuration.get(Configuration.java:415)
+	at org.apache.hadoop.conf.Configuration.getTrimmed(Configuration.java:432)
+	at org.apache.hadoop.conf.Configuration.getClass(Configuration.java:990)
+	at org.apache.hadoop.fs.FileSystem.createFileSystem(FileSystem.java:1557)
+	at org.apache.hadoop.fs.FileSystem.access$200(FileSystem.java:67)
+	at org.apache.hadoop.fs.FileSystem$Cache.getInternal(FileSystem.java:1597)
+	at org.apache.hadoop.fs.FileSystem$Cache.get(FileSystem.java:1579)
+	at org.apache.hadoop.fs.FileSystem.get(FileSystem.java:228)
+	at org.apache.hadoop.fs.FileSystem.get(FileSystem.java:111)
+	at hadoopts.data.TSBucket.loadFromLocalFS(TSBucket.java:102)
+	at hadoopts.BucketLoader.loadBucket(BucketLoader.java:16)
+	at hadoopts.BucketTool.loadBucket(BucketTool.java:26)
+	at statphys.detrending.MultiDFA4Buckets.main(MultiDFA4Buckets.java:42)
+--> process bucket    : C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq
+--> compression-codes : null
+--> key-classename    : org.apache.hadoop.io.Text
+--> value-classname   : org.apache.mahout.math.VectorWritable
+0 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3614.8176219192537
+1 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3615.515545999572
+2 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3614.9938696459667
+3 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3601.2704670377634
+4 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3602.745175030991
+5 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3596.231032003401
+6 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3579.9855425381816
+7 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3571.7419128715674
+8 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3622.740307902458
+9 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3605.7591029419327
+10 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3570.1461314691596
+11 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3604.849930980073
+12 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3565.4510020532884
+13 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3584.193049758312
+14 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3584.014238206235
+15 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3615.578440123898
+16 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3613.306485876232
+17 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3637.407412891346
+18 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3626.909719525906
+19 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3583.692606070878
+20 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3573.517239852492
+21 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3588.057987297272
+22 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3608.9336779451983
+23 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3590.738847824716
+24 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3600.0749916940176
+25 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3547.5818125403885
+26 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3594.9684692617284
+27 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3563.0448302787086
+28 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3623.7527246881077
+29 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3643.1971819424493
+30 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3616.67769905201
+31 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3594.719472724336
+32 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3600.104664599277
+33 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3603.9036399301963
+34 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3615.506221538787
+35 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3610.65294229474
+36 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3632.4662947344204
+37 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3648.4819745103123
+38 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3613.6801405001115
+39 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3585.516655320741
+40 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3596.9543425465617
+41 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3572.4942329454416
+42 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3579.206812339013
+43 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3618.763280027906
+44 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3615.466788575602
+45 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3592.283702561454
+46 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3550.87484101702
+47 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3618.6267322301387
+48 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3610.6828625143653
+49 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3516.9749287480986
+50 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3591.2540805277754
+51 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3601.122179099717
+52 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3566.0630446392274
+53 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3583.473702516523
+54 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3603.69563622335
+55 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3611.0460403444326
+56 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3577.8490638281232
+57 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3613.467065982834
+58 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3574.3318629811565
+59 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3589.975979803284
+60 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3599.063899333858
+61 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3585.423310475728
+62 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3622.0763662473446
+63 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3610.2709175910977
+64 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3630.5117822295288
+65 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3607.591983525204
+66 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3585.6239979982743
+67 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3633.0710197420167
+68 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3643.778192085514
+69 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3612.00387002724
+70 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3590.450866501017
+71 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3594.297702769425
+72 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3601.2298574910574
+73 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3608.4710160710647
+74 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3579.814324600911
+75 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3614.6536349919807
+76 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3579.01475888549
+77 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3555.586713814235
+78 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3565.752977470242
+79 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3652.6227322720692
+80 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3539.062125503438
+81 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3592.7255051633224
+82 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3590.0866795683232
+83 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3604.4701656152397
+84 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3603.08243851904
+85 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3589.043181535536
+86 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3599.4165351332804
+87 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3632.2423485639843
+88 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3595.567426575538
+89 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3588.4767879713986
+90 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3621.124899403976
+91 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3652.7669485074684
+92 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3575.7900698980834
+93 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3610.7446109902216
+94 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3604.3753798418547
+95 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3629.6528830757347
+96 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3604.8045983713505
+97 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3595.346201046308
+98 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3607.112825968376
+99 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3652.290320929301
+100 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3629.4464903625067
+101 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3603.5623415344144
+102 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3587.0633456221876
+103 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3630.8506795984895
+104 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3597.3324761780864
+105 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3586.4550807081173
+106 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3571.7342930381524
+107 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3576.286622026456
+108 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3575.8605367827427
+109 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3598.8677080315983
+110 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3604.414274211833
+111 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3536.332071947055
+112 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3595.209900610126
+113 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3567.4247687232646
+114 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3565.1731404472416
+115 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3616.5021896556714
+116 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3602.3410482570034
+117 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3583.532051268447
+118 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3583.86200033738
+119 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3568.093397922239
+120 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3647.995707044096
+121 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3586.3766009498318
+122 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3586.1132064575045
+123 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3537.183361636395
+124 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3594.696860433832
+125 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3620.9267083734026
+126 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3605.3403632031436
+127 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3588.6309981934096
+128 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3539.7487355281132
+129 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3586.9319153544793
+130 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3534.738327490494
+131 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3615.0764743799978
+132 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3649.236814378394
+133 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3587.923014172687
+134 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3593.283201052417
+135 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3613.941207610988
+136 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3591.027824791605
+137 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3610.2120503285546
+138 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3580.732342463748
+139 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3631.427866570211
+140 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3611.7697466929617
+141 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3597.8923119488936
+142 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3609.6243541325707
+143 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3608.5203678575717
+144 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3577.8918098758822
+145 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3571.8383435256933
+146 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3628.279090153175
+147 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3595.9838765405984
+148 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3645.6044937636484
+149 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3624.7059354255794
+150 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3575.7976559036333
+151 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3569.364813813417
+152 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3562.8995300766023
+153 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3616.9321326517947
+154 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3605.062405572243
+155 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3604.990843436878
+156 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3557.5498963650825
+157 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3586.735224800824
+158 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3596.736945078177
+159 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3610.9708834656417
+160 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3627.1098231620063
+161 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3636.1147556288142
+162 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3626.2661295830326
+163 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3551.1951027613727
+164 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3598.9147903618805
+165 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3598.8515158098135
+166 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3575.876061493904
+167 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3585.3349168949544
+168 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3608.081527965796
+169 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3610.507550743744
+170 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3639.5740982122443
+171 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3581.8429935852714
+172 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3619.508014293426
+173 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3608.426149142343
+174 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3589.148843133282
+175 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3605.9532494509776
+176 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3571.8734802594886
+177 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3596.7318551287367
+178 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3644.17015083185
+179 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3583.680852409323
+180 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3615.638405872122
+181 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3580.330460801832
+182 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3560.9891257807953
+183 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3595.8222218403043
+184 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3587.044520486115
+185 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3594.9090080840806
+186 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3651.7381233940714
+187 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3584.9550191987787
+188 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3647.1148021919435
+189 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3602.9357876634267
+190 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3588.330748745197
+191 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3634.4381681012774
+192 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3580.6534840893005
+193 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3602.660345430655
+194 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3595.4618568653195
+195 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3608.4118305288393
+196 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3623.2460433941683
+197 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3585.1134699475224
+198 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3582.6075497183115
+199 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3609.7974279271452
+200 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3588.2592109309717
+201 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3608.1072056491744
+202 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3654.0251857970397
+203 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3615.2976262008783
+204 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3652.840964114084
+205 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3650.234843709723
+206 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3615.75336747238
+207 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3594.3963414359287
+208 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3613.9205363504802
+209 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3640.8709277344474
+210 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3633.611949307942
+211 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3600.358742030183
+212 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3592.208405938376
+213 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3613.171248857488
+214 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3594.202037210823
+215 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3611.2312444317454
+216 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3631.1963020574617
+217 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3583.072848990044
+218 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3608.9059853916838
+219 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3601.8415155232724
+220 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3555.157204008976
+221 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3590.294021714626
+222 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3562.88739933009
+223 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3600.7984740523393
+224 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3593.1453424077904
+225 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3597.334307129228
+226 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3594.0911329731816
+227 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3566.492285833308
+228 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3611.9961974985713
+229 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3567.4745003110957
+230 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3627.243291253853
+231 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3624.094369096919
+232 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3578.3264971888566
+233 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3605.776641124489
+234 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3587.851229152042
+235 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3614.5573909585823
+236 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3542.5342240226964
+237 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3568.084023235668
+238 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3627.2035489976133
+239 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3614.615269072559
+240 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3567.7986036026437
+241 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3564.0211879142526
+242 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3627.370109142833
+243 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3568.7831679809938
+244 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3586.0801198036515
+245 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3576.993927639118
+246 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3600.202012846065
+247 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3566.357508486941
+248 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3591.120499961344
+249 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3602.1892844146637
+250 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3581.331616691031
+251 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3619.4159559120963
+252 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3634.4427252433866
+253 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3607.5755515439764
+254 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3611.1725205283697
+255 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3582.8174287693614
+256 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3568.3510254488097
+257 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3618.9022706039714
+258 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3577.9195831518123
+259 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3570.2020920721757
+260 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3650.9308776222324
+261 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3632.7002337550293
+262 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3583.5489099897563
+263 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3587.991364129495
+264 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3620.049014085659
+265 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3585.2814821465954
+266 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3599.8178513617345
+267 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3579.3879127459313
+268 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3570.353413348695
+269 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3595.739310163972
+270 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3651.265016977449
+271 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3596.3756559072517
+272 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3600.2733065458924
+273 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3650.948259020837
+274 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3611.2102587406844
+275 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3578.7197584425
+276 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3597.0191725491363
+277 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3595.5641202163374
+278 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3583.7546818208925
+279 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3589.9666407411637
+280 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3568.582741394957
+281 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3567.0239379490577
+282 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3550.7806400934837
+283 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3610.4439659233676
+284 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3590.7369923175643
+285 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3644.5460035291053
+286 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3603.951739730942
+287 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3594.260653861679
+288 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3597.0361545086957
+289 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3608.129857672794
+290 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3556.7128359693206
+291 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3605.3068718233676
+292 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3603.8157092189226
+293 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3615.556294690021
+294 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3573.2900311114954
+295 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3607.2540376889547
+296 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3621.19238457178
+297 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3589.3873539457963
+298 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3623.690682499221
+299 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3572.554816599507
+300 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3614.0641618522527
+301 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3607.9663310212695
+302 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3629.703393572498
+303 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3625.4431279303017
+304 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3637.1102708277085
+305 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3579.417767223244
+306 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3656.898019278683
+307 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3605.934137750903
+308 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3609.7911892561524
+309 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3597.647454516531
+310 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3628.625662883579
+311 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3633.824262133195
+312 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3595.3486499494625
+313 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3577.342433691054
+314 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3568.018682066135
+315 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3597.6911695356234
+316 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3612.8056281967524
+317 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3598.9709988918717
+318 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3582.9906805438877
+319 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3622.893779208665
+320 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3607.9663571423484
+321 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3551.78269226955
+322 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3639.236511157502
+323 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3629.5722537145484
+324 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3569.416317369919
+325 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3594.8083057237222
+326 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3609.2322802517733
+327 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3627.648014618086
+328 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3569.5222362468107
+329 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3618.8598804112557
+330 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3550.235343235096
+331 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3614.8237280922367
+332 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3586.4320944060705
+333 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3597.5307105908096
+334 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3607.2843039832574
+335 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3600.5833097460386
+336 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3611.0751206502086
+337 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3568.1953366490693
+338 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3600.1990166129226
+339 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3603.191928439312
+340 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3587.1617962576283
+341 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3639.0095521787607
+342 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3608.5805864946933
+343 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3583.696000784089
+344 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3628.1838483964384
+345 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3601.9103979288666
+346 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3639.811369061142
+347 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3605.923193797106
+348 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3650.4142608679795
+349 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3607.616167303087
+350 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3604.054967795082
+351 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3558.482424795432
+352 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3630.9072602191122
+353 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3639.626403111388
+354 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3575.25623734402
+355 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3589.763861485895
+356 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3607.4983270819525
+357 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3591.2218944258852
+358 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3606.1412843842513
+359 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3602.938920385603
+360 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3590.804191211727
+361 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3589.4646873394854
+362 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3591.21746200331
+363 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3625.9602707259205
+364 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3580.2228320978415
+365 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3592.1980741624866
+366 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3556.7733745426854
+367 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3611.561827151058
+368 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3604.9334814522294
+369 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3597.0465927073947
+370 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3599.878876957186
+371 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3562.258757615576
+372 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3558.8966151628783
+373 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3602.4160396999373
+374 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3562.3850758728554
+375 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3652.347480314774
+376 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3562.853966615298
+377 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3631.4934542685714
+378 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3617.924324416323
+379 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3616.905661494249
+380 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3620.328513445533
+381 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3645.247131057531
+382 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3596.910226550952
+383 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3549.792218996329
+384 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3574.624485050295
+385 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3581.4266101982876
+386 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3602.537639282357
+387 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3584.6473204123913
+388 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3586.8273644495575
+389 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3587.5626860417237
+390 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3559.7826645817863
+391 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3576.8923814734494
+392 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3592.803876544583
+393 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3609.9673997819145
+394 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3601.402660368486
+395 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3634.7300700884466
+396 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3539.2020042705944
+397 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3625.7340441352912
+398 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3589.9362285885845
+399 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3597.1443045262304
+400 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3619.4509771379185
+401 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3593.7371605539756
+402 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3634.703225541716
+403 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3603.900250897414
+404 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3587.76127397377
+405 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3587.6325413417117
+406 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3582.80475462412
+407 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3581.5443269390325
+408 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3595.1246261706387
+409 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3606.857228536466
+410 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3593.1231725274433
+411 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3554.404199928626
+412 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3603.314010176208
+413 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3580.629516026177
+414 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3583.3220821907275
+415 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3629.5887867138676
+416 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3636.8836597867607
+417 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3584.9489435139662
+418 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3597.8463404890895
+419 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3608.988253161293
+420 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3586.1690514992956
+421 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3615.596305041487
+422 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3579.922048935659
+423 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3657.274019729347
+424 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3616.286914301663
+425 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3618.133643356296
+426 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3577.556563978101
+427 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3637.8987517378705
+428 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3596.1352343664435
+429 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3580.9042490774254
+430 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3626.538491619436
+431 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3594.096366490893
+432 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3577.3932342189973
+433 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3577.0326644952156
+434 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3606.4376862407917
+435 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3682.8820314884824
+436 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3603.521396043016
+437 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3605.4246834668843
+438 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3646.6052490664806
+439 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3611.0521626684595
+440 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3597.7614512347495
+441 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3611.7673460522174
+442 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3597.1735398020332
+443 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3626.184431767512
+444 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3570.1363774078663
+445 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3593.5289468879846
+446 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3619.056160108621
+447 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3612.6377500937515
+448 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3655.450406276237
+449 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3550.959025397887
+450 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3580.9479654793004
+451 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3606.552287227873
+452 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3590.2890150110948
+453 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3578.088376610765
+454 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3617.3250612009006
+455 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3571.8494621567925
+456 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3612.018935122409
+457 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3619.7290416686046
+458 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3592.4447996568547
+459 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3636.23194099388
+460 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3595.7881467215884
+461 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3588.474312132943
+462 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3601.3457902066543
+463 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3597.1836381262638
+464 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3604.5258769422444
+465 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3524.6987300593837
+466 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3629.8478836737218
+467 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3576.9697252747865
+468 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3604.9426086423555
+469 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3602.5580902774986
+470 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3569.552184504812
+471 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3568.636616756677
+472 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3573.530070047904
+473 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3573.9894318970855
+474 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3568.8410503974465
+475 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3570.0119828967854
+476 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3565.561240788021
+477 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3586.7110479046282
+478 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3560.8780834487
+479 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3576.7047364225987
+480 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3635.090351000676
+481 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3636.2224820786746
+482 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3581.6081413756715
+483 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3565.1050476188384
+484 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3588.952880811343
+485 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3594.804526441793
+486 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3599.7573260117897
+487 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3612.384333002609
+488 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3638.765559453769
+489 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3577.519219442533
+490 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3621.8329927393593
+491 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3573.495259778735
+492 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3620.926365627517
+493 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3603.209858889765
+494 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3618.1237460935927
+495 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3573.171746316675
+496 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3585.6145301952347
+497 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3621.5009836539843
+498 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3620.699442608843
+499 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3615.9289568010677
+500 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3640.790534364565
+501 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3599.798386571712
+502 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3595.411185603046
+503 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3590.063312452072
+504 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3621.1961052774254
+505 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3625.2891100198644
+506 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3645.8913299611745
+507 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3588.6524788149836
+508 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3592.3542239971803
+509 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3641.9414465713608
+510 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3557.5534801384074
+511 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3617.555370856174
+512 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3598.569119920508
+513 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3595.504937013382
+514 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3592.592492156771
+515 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3556.412158417118
+516 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3619.9262716864755
+517 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3616.510375726581
+518 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3600.9844689710944
+519 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3617.6442591957616
+520 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3648.29241240681
+521 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3614.2698039497727
+522 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3643.486766190865
+523 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3651.454337211861
+524 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3608.315517163899
+525 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3604.876514712271
+526 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3602.637987744111
+527 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3567.8263147427056
+528 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3588.42481990857
+529 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3584.2050468883
+530 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3580.757990541384
+531 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3605.5253530708337
+532 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3618.8307992445352
+533 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3568.911196536727
+534 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3598.9478761907903
+535 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3632.0978744931617
+536 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3596.5251829284143
+537 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3612.4320057401983
+538 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3611.0900030678636
+539 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3578.871542621471
+540 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3600.2809513417783
+541 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3585.9857654660555
+542 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3566.8479729492683
+543 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3595.955277060133
+544 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3576.6523368503913
+545 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3593.5720172204115
+546 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3578.6666416819953
+547 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3594.239245121175
+548 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3599.974815399958
+549 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3559.9715537038123
+550 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3607.772113714668
+551 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3602.3948622412477
+552 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3615.365119688669
+553 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3580.746418155611
+554 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3608.1717447499223
+555 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3588.874796794996
+556 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3610.7212278871652
+557 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3571.2399011799394
+558 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3616.6541378552583
+559 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3614.9129642238095
+560 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3584.7223715360647
+561 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3610.576547868468
+562 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3556.789149974749
+563 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3598.5245368855253
+564 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3561.8290278122245
+565 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3651.662148576751
+566 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3561.9278832268487
+567 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3576.5059260389735
+568 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3593.2829280672113
+569 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3660.18374492912
+570 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3639.202694575238
+571 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3623.434802854588
+572 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3580.1070500637334
+573 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3577.60962929741
+574 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3620.527188109929
+575 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3594.6700820379933
+576 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3556.105627110022
+577 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3619.189346380305
+578 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3609.5962162395467
+579 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3587.3519317244495
+580 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3602.8641363028746
+581 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3588.9536839944826
+582 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3597.8858882890695
+583 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3611.4017701409575
+584 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3618.74930739384
+585 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3570.7146885569628
+586 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3589.653555256135
+587 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3604.522263177283
+588 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3585.9091206285166
+589 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3628.065649379191
+590 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3628.9378232070217
+591 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3571.1973277984953
+592 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3627.2728073426088
+593 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3596.381111348006
+594 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3646.55854733125
+595 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3608.692133311439
+596 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3628.5508446720455
+597 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3609.816863496392
+598 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3624.1168316136595
+599 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3606.053095419213
+600 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3568.2349637783427
+601 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3627.3099506562407
+602 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3583.9950301009735
+603 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3567.107882166704
+604 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3600.598143798888
+605 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3563.578664338802
+606 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3576.356748541028
+607 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3585.465408769946
+608 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3553.6946146034497
+609 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3582.122547115612
+610 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3606.1468424008367
+611 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3656.5158443364544
+612 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3584.359856928432
+613 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3606.2223904877105
+614 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3624.091414244015
+615 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3589.4306066499184
+616 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3592.2106001565953
+617 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3625.9402374187357
+618 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3563.697821494306
+619 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3604.162360501197
+620 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3632.644821586804
+621 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3618.1193786394438
+622 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3602.2546673458387
+623 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3596.445026539623
+624 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3565.841755047022
+625 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3603.3843597110017
+626 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3642.831806246762
+627 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3604.793768383548
+628 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3600.761876633766
+629 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3636.1409688803196
+630 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3605.280344659236
+631 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3618.5050050776304
+632 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3630.1469168418184
+633 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3615.5762501336703
+634 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3562.232634309133
+635 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3558.6564042681885
+636 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3583.519858105336
+637 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3545.658496476141
+638 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3620.1022825126183
+639 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3632.1068828289604
+640 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3587.184927034523
+641 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3595.1372491418883
+642 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3585.084141685721
+643 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3614.4966079340966
+644 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3611.227605174187
+645 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3630.5432998144884
+646 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3651.1543200582187
+647 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3567.2469964470897
+648 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3618.5146206888617
+649 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3571.1886928023832
+650 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3637.070168977888
+651 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3594.5607163066884
+652 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3572.693955411144
+653 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3625.1667187358235
+654 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3587.370295680812
+655 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3618.421683278371
+656 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3586.194837391023
+657 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3641.351919797059
+658 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3631.374553814205
+659 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3637.595066199613
+660 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3617.2277461709673
+661 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3591.4000884239986
+662 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3613.1840467146876
+663 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3608.627281838941
+664 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3601.784413992864
+665 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3577.748267980749
+666 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3577.681131863726
+667 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3613.8459978016667
+668 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3588.6378166636277
+669 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3618.6147485555316
+670 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3621.529411842628
+671 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3598.36012907282
+672 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3597.3421878453987
+673 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3596.9990743664284
+674 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3589.173742945475
+675 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3605.0598458998943
+676 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3614.23300409482
+677 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3599.682037652117
+678 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3620.840227445276
+679 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3613.61656637205
+680 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3587.426997663116
+681 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3572.2256779265917
+682 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3628.5362236076894
+683 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3593.482952635168
+684 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3606.822146050319
+685 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3608.9732908305673
+686 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3618.0503341127546
+687 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3582.892925390779
+688 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3608.0976806480207
+689 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3586.049417775225
+690 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3538.9524126114184
+691 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3589.861652317734
+692 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3606.714081419658
+693 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3604.3598491606995
+694 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3623.593566497148
+695 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3612.1855493985468
+696 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3609.9130754848225
+697 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3626.5916280121037
+698 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3606.1061479056234
+699 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3637.4422845104905
+700 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3607.717645747108
+701 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3616.213047952977
+702 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3573.4037637133997
+703 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3598.9907742367664
+704 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3596.932020701718
+705 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3621.4736494947288
+706 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3562.1812666270766
+707 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3630.9711866827975
+708 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3611.141678667304
+709 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3578.4042261165237
+710 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3574.9147640345354
+711 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3578.304937587047
+712 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3585.7133535975668
+713 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3613.8168190944716
+714 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3588.8616088407375
+715 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3624.6946952384765
+716 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3622.795018943164
+717 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3573.304721822912
+718 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3544.0604056367674
+719 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3530.624378196492
+720 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3591.3159111211185
+721 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3632.2424755528045
+722 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3606.331008449838
+723 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3578.3591529814516
+724 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3596.9865046894242
+725 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3620.785873161658
+726 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3583.274524855942
+727 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3598.9454330463795
+728 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3614.2985313609875
+729 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3623.871955294142
+730 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3586.2733068455027
+731 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3579.2108915174495
+732 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3576.524970213514
+733 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3608.219018289423
+734 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]	3627.4909619544383
+735 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[]	3627.4909619544383
+--> nr of records     : 736
+zahlW=0 max=736 0 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]
+0 size x=7200
+1 size x=7200
+2 size x=7200
+3 size x=7200
+4 size x=7200
+5 size x=7200
+6 size x=7200
+7 size x=7200
+8 size x=7200
+9 size x=7200
+10 size x=7200
+11 size x=7200
+12 size x=7200
+13 size x=7200
+14 size x=7200
+15 size x=7200
+16 size x=7200
+17 size x=7200
+18 size x=7200
+19 size x=7200
+20 size x=7200
+21 size x=7200
+22 size x=7200
+23 size x=7200
+24 size x=7200
+25 size x=7200
+26 size x=7200
+27 size x=7200
+28 size x=7200
+29 size x=7200
+30 size x=7200
+31 size x=7200
+32 size x=7200
+33 size x=7200
+34 size x=7200
+35 size x=7200
+36 size x=7200
+37 size x=7200
+38 size x=7200
+39 size x=7200
+40 size x=7200
+41 size x=7200
+42 size x=7200
+43 size x=7200
+44 size x=7200
+45 size x=7200
+46 size x=7200
+47 size x=7200
+48 size x=7200
+49 size x=7200
+50 size x=7200
+51 size x=7200
+52 size x=7200
+53 size x=7200
+54 size x=7200
+55 size x=7200
+56 size x=7200
+57 size x=7200
+58 size x=7200
+59 size x=7200
+60 size x=7200
+61 size x=7200
+62 size x=7200
+63 size x=7200
+64 size x=7200
+65 size x=7200
+66 size x=7200
+67 size x=7200
+68 size x=7200
+69 size x=7200
+70 size x=7200
+71 size x=7200
+72 size x=7200
+73 size x=7200
+74 size x=7200
+75 size x=7200
+76 size x=7200
+77 size x=7200
+78 size x=7200
+79 size x=7200
+80 size x=7200
+81 size x=7200
+82 size x=7200
+83 size x=7200
+84 size x=7200
+85 size x=7200
+86 size x=7200
+87 size x=7200
+88 size x=7200
+89 size x=7200
+90 size x=7200
+91 size x=7200
+92 size x=7200
+93 size x=7200
+94 size x=7200
+95 size x=7200
+96 size x=7200
+97 size x=7200
+98 size x=7200
+99 size x=7200
+100 size x=7200
+101 size x=7200
+102 size x=7200
+103 size x=7200
+104 size x=7200
+105 size x=7200
+106 size x=7200
+107 size x=7200
+108 size x=7200
+109 size x=7200
+110 size x=7200
+111 size x=7200
+112 size x=7200
+113 size x=7200
+114 size x=7200
+115 size x=7200
+116 size x=7200
+117 size x=7200
+118 size x=7200
+119 size x=7200
+120 size x=7200
+121 size x=7200
+122 size x=7200
+123 size x=7200
+124 size x=7200
+125 size x=7200
+126 size x=7200
+127 size x=7200
+128 size x=7200
+129 size x=7200
+130 size x=7200
+131 size x=7200
+132 size x=7200
+133 size x=7200
+134 size x=7200
+135 size x=7200
+136 size x=7200
+137 size x=7200
+138 size x=7200
+139 size x=7200
+140 size x=7200
+141 size x=7200
+142 size x=7200
+143 size x=7200
+144 size x=7200
+145 size x=7200
+146 size x=7200
+147 size x=7200
+148 size x=7200
+149 size x=7200
+150 size x=7200
+151 size x=7200
+152 size x=7200
+153 size x=7200
+154 size x=7200
+155 size x=7200
+156 size x=7200
+157 size x=7200
+158 size x=7200
+159 size x=7200
+160 size x=7200
+161 size x=7200
+162 size x=7200
+163 size x=7200
+164 size x=7200
+165 size x=7200
+166 size x=7200
+167 size x=7200
+168 size x=7200
+169 size x=7200
+170 size x=7200
+171 size x=7200
+172 size x=7200
+173 size x=7200
+174 size x=7200
+175 size x=7200
+176 size x=7200
+177 size x=7200
+178 size x=7200
+179 size x=7200
+180 size x=7200
+181 size x=7200
+182 size x=7200
+183 size x=7200
+184 size x=7200
+185 size x=7200
+186 size x=7200
+187 size x=7200
+188 size x=7200
+189 size x=7200
+190 size x=7200
+191 size x=7200
+192 size x=7200
+193 size x=7200
+194 size x=7200
+195 size x=7200
+196 size x=7200
+197 size x=7200
+198 size x=7200
+199 size x=7200
+200 size x=7200
+201 size x=7200
+202 size x=7200
+203 size x=7200
+204 size x=7200
+205 size x=7200
+206 size x=7200
+207 size x=7200
+208 size x=7200
+209 size x=7200
+210 size x=7200
+211 size x=7200
+212 size x=7200
+213 size x=7200
+214 size x=7200
+215 size x=7200
+216 size x=7200
+217 size x=7200
+218 size x=7200
+219 size x=7200
+220 size x=7200
+221 size x=7200
+222 size x=7200
+223 size x=7200
+224 size x=7200
+225 size x=7200
+226 size x=7200
+227 size x=7200
+228 size x=7200
+229 size x=7200
+230 size x=7200
+231 size x=7200
+232 size x=7200
+233 size x=7200
+234 size x=7200
+235 size x=7200
+236 size x=7200
+237 size x=7200
+238 size x=7200
+239 size x=7200
+240 size x=7200
+241 size x=7200
+242 size x=7200
+243 size x=7200
+244 size x=7200
+245 size x=7200
+246 size x=7200
+247 size x=7200
+248 size x=7200
+249 size x=7200
+250 size x=7200
+251 size x=7200
+252 size x=7200
+253 size x=7200
+254 size x=7200
+255 size x=7200
+256 size x=7200
+257 size x=7200
+258 size x=7200
+259 size x=7200
+260 size x=7200
+261 size x=7200
+262 size x=7200
+263 size x=7200
+264 size x=7200
+265 size x=7200
+266 size x=7200
+267 size x=7200
+268 size x=7200
+269 size x=7200
+270 size x=7200
+271 size x=7200
+272 size x=7200
+273 size x=7200
+274 size x=7200
+275 size x=7200
+276 size x=7200
+277 size x=7200
+278 size x=7200
+279 size x=7200
+280 size x=7200
+281 size x=7200
+282 size x=7200
+283 size x=7200
+284 size x=7200
+285 size x=7200
+286 size x=7200
+287 size x=7200
+288 size x=7200
+289 size x=7200
+290 size x=7200
+291 size x=7200
+292 size x=7200
+293 size x=7200
+294 size x=7200
+295 size x=7200
+296 size x=7200
+297 size x=7200
+298 size x=7200
+299 size x=7200
+300 size x=7200
+301 size x=7200
+302 size x=7200
+303 size x=7200
+304 size x=7200
+305 size x=7200
+306 size x=7200
+307 size x=7200
+308 size x=7200
+309 size x=7200
+310 size x=7200
+311 size x=7200
+312 size x=7200
+313 size x=7200
+314 size x=7200
+315 size x=7200
+316 size x=7200
+317 size x=7200
+318 size x=7200
+319 size x=7200
+320 size x=7200
+321 size x=7200
+322 size x=7200
+323 size x=7200
+324 size x=7200
+325 size x=7200
+326 size x=7200
+327 size x=7200
+328 size x=7200
+329 size x=7200
+330 size x=7200
+331 size x=7200
+332 size x=7200
+333 size x=7200
+334 size x=7200
+335 size x=7200
+336 size x=7200
+337 size x=7200
+338 size x=7200
+339 size x=7200
+340 size x=7200
+341 size x=7200
+342 size x=7200
+343 size x=7200
+344 size x=7200
+345 size x=7200
+346 size x=7200
+347 size x=7200
+348 size x=7200
+349 size x=7200
+350 size x=7200
+351 size x=7200
+352 size x=7200
+353 size x=7200
+354 size x=7200
+355 size x=7200
+356 size x=7200
+357 size x=7200
+358 size x=7200
+359 size x=7200
+360 size x=7200
+361 size x=7200
+362 size x=7200
+363 size x=7200
+364 size x=7200
+365 size x=7200
+366 size x=7200
+367 size x=7200
+368 size x=7200
+369 size x=7200
+370 size x=7200
+371 size x=7200
+372 size x=7200
+373 size x=7200
+374 size x=7200
+375 size x=7200
+376 size x=7200
+377 size x=7200
+378 size x=7200
+379 size x=7200
+380 size x=7200
+381 size x=7200
+382 size x=7200
+383 size x=7200
+384 size x=7200
+385 size x=7200
+386 size x=7200
+387 size x=7200
+388 size x=7200
+389 size x=7200
+390 size x=7200
+391 size x=7200
+392 size x=7200
+393 size x=7200
+394 size x=7200
+395 size x=7200
+396 size x=7200
+397 size x=7200
+398 size x=7200
+399 size x=7200
+400 size x=7200
+401 size x=7200
+402 size x=7200
+403 size x=7200
+404 size x=7200
+405 size x=7200
+406 size x=7200
+407 size x=7200
+408 size x=7200
+409 size x=7200
+410 size x=7200
+411 size x=7200
+412 size x=7200
+413 size x=7200
+414 size x=7200
+415 size x=7200
+416 size x=7200
+417 size x=7200
+418 size x=7200
+419 size x=7200
+420 size x=7200
+421 size x=7200
+422 size x=7200
+423 size x=7200
+424 size x=7200
+425 size x=7200
+426 size x=7200
+427 size x=7200
+428 size x=7200
+429 size x=7200
+430 size x=7200
+431 size x=7200
+432 size x=7200
+433 size x=7200
+434 size x=7200
+435 size x=7200
+436 size x=7200
+437 size x=7200
+438 size x=7200
+439 size x=7200
+440 size x=7200
+441 size x=7200
+442 size x=7200
+443 size x=7200
+444 size x=7200
+445 size x=7200
+446 size x=7200
+447 size x=7200
+448 size x=7200
+449 size x=7200
+450 size x=7200
+451 size x=7200
+452 size x=7200
+453 size x=7200
+454 size x=7200
+455 size x=7200
+456 size x=7200
+457 size x=7200
+458 size x=7200
+459 size x=7200
+460 size x=7200
+461 size x=7200
+462 size x=7200
+463 size x=7200
+464 size x=7200
+465 size x=7200
+466 size x=7200
+467 size x=7200
+468 size x=7200
+469 size x=7200
+470 size x=7200
+471 size x=7200
+472 size x=7200
+473 size x=7200
+474 size x=7200
+475 size x=7200
+476 size x=7200
+477 size x=7200
+478 size x=7200
+479 size x=7200
+480 size x=7200
+481 size x=7200
+482 size x=7200
+483 size x=7200
+484 size x=7200
+485 size x=7200
+486 size x=7200
+487 size x=7200
+488 size x=7200
+489 size x=7200
+490 size x=7200
+491 size x=7200
+492 size x=7200
+493 size x=7200
+494 size x=7200
+495 size x=7200
+496 size x=7200
+497 size x=7200
+498 size x=7200
+499 size x=7200
+500 size x=7200
+501 size x=7200
+502 size x=7200
+503 size x=7200
+504 size x=7200
+505 size x=7200
+506 size x=7200
+507 size x=7200
+508 size x=7200
+509 size x=7200
+510 size x=7200
+511 size x=7200
+512 size x=7200
+513 size x=7200
+514 size x=7200
+515 size x=7200
+516 size x=7200
+517 size x=7200
+518 size x=7200
+519 size x=7200
+520 size x=7200
+521 size x=7200
+522 size x=7200
+523 size x=7200
+524 size x=7200
+525 size x=7200
+526 size x=7200
+527 size x=7200
+528 size x=7200
+529 size x=7200
+530 size x=7200
+531 size x=7200
+532 size x=7200
+533 size x=7200
+534 size x=7200
+535 size x=7200
+536 size x=7200
+537 size x=7200
+538 size x=7200
+539 size x=7200
+540 size x=7200
+541 size x=7200
+542 size x=7200
+543 size x=7200
+544 size x=7200
+545 size x=7200
+546 size x=7200
+547 size x=7200
+548 size x=7200
+549 size x=7200
+550 size x=7200
+551 size x=7200
+552 size x=7200
+553 size x=7200
+554 size x=7200
+555 size x=7200
+556 size x=7200
+557 size x=7200
+558 size x=7200
+559 size x=7200
+560 size x=7200
+561 size x=7200
+562 size x=7200
+563 size x=7200
+564 size x=7200
+565 size x=7200
+566 size x=7200
+567 size x=7200
+568 size x=7200
+569 size x=7200
+570 size x=7200
+571 size x=7200
+572 size x=7200
+573 size x=7200
+574 size x=7200
+575 size x=7200
+576 size x=7200
+577 size x=7200
+578 size x=7200
+579 size x=7200
+580 size x=7200
+581 size x=7200
+582 size x=7200
+583 size x=7200
+584 size x=7200
+585 size x=7200
+586 size x=7200
+587 size x=7200
+588 size x=7200
+589 size x=7200
+590 size x=7200
+591 size x=7200
+592 size x=7200
+593 size x=7200
+594 size x=7200
+595 size x=7200
+596 size x=7200
+597 size x=7200
+598 size x=7200
+599 size x=7200
+600 size x=7200
+601 size x=7200
+602 size x=7200
+603 size x=7200
+604 size x=7200
+605 size x=7200
+606 size x=7200
+607 size x=7200
+608 size x=7200
+609 size x=7200
+610 size x=7200
+611 size x=7200
+612 size x=7200
+613 size x=7200
+614 size x=7200
+615 size x=7200
+616 size x=7200
+617 size x=7200
+618 size x=7200
+619 size x=7200
+620 size x=7200
+621 size x=7200
+622 size x=7200
+623 size x=7200
+624 size x=7200
+625 size x=7200
+626 size x=7200
+627 size x=7200
+628 size x=7200
+629 size x=7200
+630 size x=7200
+631 size x=7200
+632 size x=7200
+633 size x=7200
+634 size x=7200
+635 size x=7200
+636 size x=7200
+637 size x=7200
+638 size x=7200
+639 size x=7200
+640 size x=7200
+641 size x=7200
+642 size x=7200
+643 size x=7200
+644 size x=7200
+645 size x=7200
+646 size x=7200
+647 size x=7200
+648 size x=7200
+649 size x=7200
+650 size x=7200
+651 size x=7200
+652 size x=7200
+653 size x=7200
+654 size x=7200
+655 size x=7200
+656 size x=7200
+657 size x=7200
+658 size x=7200
+659 size x=7200
+660 size x=7200
+661 size x=7200
+662 size x=7200
+663 size x=7200
+664 size x=7200
+665 size x=7200
+666 size x=7200
+667 size x=7200
+668 size x=7200
+669 size x=7200
+670 size x=7200
+671 size x=7200
+672 size x=7200
+673 size x=7200
+674 size x=7200
+675 size x=7200
+676 size x=7200
+677 size x=7200
+678 size x=7200
+679 size x=7200
+680 size x=7200
+681 size x=7200
+682 size x=7200
+683 size x=7200
+684 size x=7200
+685 size x=7200
+686 size x=7200
+687 size x=7200
+688 size x=7200
+689 size x=7200
+690 size x=7200
+691 size x=7200
+692 size x=7200
+693 size x=7200
+694 size x=7200
+695 size x=7200
+696 size x=7200
+697 size x=7200
+698 size x=7200
+699 size x=7200
+700 size x=7200
+701 size x=7200
+702 size x=7200
+703 size x=7200
+704 size x=7200
+705 size x=7200
+706 size x=7200
+707 size x=7200
+708 size x=7200
+709 size x=7200
+710 size x=7200
+711 size x=7200
+712 size x=7200
+713 size x=7200
+714 size x=7200
+715 size x=7200
+716 size x=7200
+717 size x=7200
+718 size x=7200
+719 size x=7200
+720 size x=7200
+721 size x=7200
+722 size x=7200
+723 size x=7200
+724 size x=7200
+725 size x=7200
+726 size x=7200
+727 size x=7200
+728 size x=7200
+729 size x=7200
+730 size x=7200
+731 size x=7200
+732 size x=7200
+733 size x=7200
+734 size x=7200
+735 size x=7200
+> Ermittle s für längste Reihe mit l=7200 Werten. 
+> Label der längsten Reihe: 0 ) C:\DATA\WIKI\en_ons0_IDS.dat.tsb.vec.seq_[random data]
+Range:7197
+> Berechne DFA für 736 Messreihen mit order=1.
+0
+Batchvorgang abbrechen (J/N)? 
